@@ -1,0 +1,2452 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+      <link href="assets/images/icon.png" rel="icon" />
+      <title>Documentation | PlayTube</title>
+      <meta name="description" content="PlayTube">
+      <meta name="author" content="harnishdesign.net">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-K04J9MY9JY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CR4GB861WH');
+</script> -->
+      <!-- Stylesheet
+         ============================== -->
+      <!-- Bootstrap -->
+      <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+      <!-- Font Awesome Icon -->
+      <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+      <!-- Magnific Popup -->
+      <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+      <!-- Highlight Syntax -->
+      <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+      <!-- Custom Stylesheet -->
+      <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/color-blue.css" />
+   </head>
+   <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+      <!-- Preloader -->
+      <div class="preloader">
+         <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+         </div>
+      </div>
+      <!-- Preloader End -->
+      <!-- Document Wrapper
+         =============================== -->
+      <div id="main-wrapper">
+         <!-- Header
+            ============================ -->
+         <header id="header" class="sticky-top">
+            <!-- Navbar -->
+            <nav class="primary-menu navbar navbar-expand-lg bg-dark navbar-text-light navbar-dropdown-dark border-0">
+               <div class="container-fluid">
+                  <!-- Sidebar Toggler -->
+                  <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button">
+                  <span></span>
+                  <span class="w-75"></span>
+                  <span class="w-50"></span>
+                  </button>
+                  <!-- Logo -->
+                  <a class="logo ml-md-3" href="index.html" title="iDocs Template">
+                  <img src="assets/images/logo-light.png" alt="iDocs Template" />
+                  </a>
+                  <span class="text-2 text-light ml-2">v2.2.2</span>
+                  <!-- Logo End -->
+                  <!-- Navbar Toggler -->
+                  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  </button>
+                  <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+                     <ul class="navbar-nav">
+                        <li>
+                           <a target="_blank" href="https://1.envato.market/AoPrn7" style="background: #04abf2;">Buy PlayTube</a>
+                        </li>
+                        <li>
+                           <a target="_blank" href="https://doughouzforest.ticksy.com/">Support</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+            <!-- Navbar End -->
+         </header>
+         <!-- Header End -->
+         <!-- Content
+            ============================ -->
+         <div id="content" role="main">
+            <!-- Sidebar Navigation
+               ============================ -->
+            <div class="idocs-navigation bg-light">
+               <ul class="nav flex-column ">
+                  <li class="nav-item">
+                     <a class="nav-link active" href="#idocs_start">Getting Started</a>
+                     <ul class="nav flex-column">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#idocs_installation">Installation</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#idocs_whats_next">What's Next?</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#idocs_color_schemes">Color Schemes</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#idocs_logo_settings">Logo Settings</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#idocs_general_setup">General Setup</a>
+                     <ul class="nav flex-column">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#idocs_smtp">SMTP (E-mail)</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#idocs_agora">Agora (Live Stream) </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#idocs_nodejs">NodeJS (Messaging) </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#idocs_ffmpeg">FFMPEG (Converter) </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#idocs_amazon_s3">Amazon S3 Storage</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#idocs_digitalocean">Digitalocean Storage</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#FTP">FTP Setup Storage</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Wasabi">Wasabi (FTP) Storage</a>
+                        </li>
+                        <li class="nav-item">
+        									<a class="nav-link" href="#WasabiS3">Wasabi (S3)</a>
+        								</li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#idocs_onesingal">OneSignal </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#reCaptcha">Google reCaptcha</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#youtube_api">YouTube API Key</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#twitch_id">Twitch Client ID</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#sociallogin">Social Login Setup</a>
+                     <ul class="nav flex-column">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Facebook">Facebook</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Twitter">Twitter</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Google">Google+</a>
+                        </li>
+
+                        <li class="nav-item">
+                           <a class="nav-link" href="#LinkedIn">LinkedIn</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Vkontakte">Vkontakte </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Discord">Discord </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Mailru">Mailru </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#WoWonder">WoWonder </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Instagram">Instagram </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#QQ">QQ </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#WeChat">WeChat </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#payment_gateways">Payment Gateways Setup</a>
+                     <ul class="nav flex-column">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Stripe">Stripe</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#PayPal">PayPal</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#CashFree">CashFree</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#RazorPay">RazorPay </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#PayStack">PayStack</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#PaySera">PaySera</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Iyzipay">Iyzipay</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Checkout">2Checkout</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#PayU">PayU</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Authorize">Authorize.Net</a>
+                          </li>
+                          <li class="nav-item">
+                          <a class="nav-link" href="#SecurionPay">SecurionPay</a>
+                          </li>
+                          <li class="nav-item">
+                          <a class="nav-link" href="#Yoomoney">Yoomoney (Yandex)</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#coinbase">CoinBase (Crypto)</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#CoinPayments">CoinPayments (Bitcoin)</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#Monetization">Monetization</a>
+                     <ul class="nav flex-column">
+
+                       <li class="nav-item">
+                          <a class="nav-link" href="#ads">Advertising System</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#Pro">Pro System</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#paid_channels">Channel Subscription</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#self_hosted_ads">Self Hosted Ads</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#selling_videos">Paid Videos</a>
+                       </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#Features">PlayTube Features</a>
+                     <ul class="nav flex-column">
+
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Languages">Languages</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Categories">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#SEO">SEO & Pages</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#movies">Movies System</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#import">Import System</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#updates" target="_blank">How To Update?</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#Customization">Code Customization</a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#common_issues">Common Issues</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#idocs_faq">FAQs</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#idocs_support">Support</a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#idocs_changelog">Changelog</a>
+                     <ul class="nav flex-column">
+                       <li class="nav-item">
+                          <a class="nav-link" href="#v2-2-2">v2.2.2</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#v2-2-1">v2.2.1</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#v2-2">v2.2</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#v2-1-4">v2.1.4</a>
+                       </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v2-1-3">v2.1.3</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v2-1-2">v2.1.2</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v2-1">v2.1</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v2-0-3">v2.0.3</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v2-0-2">v2.0.2</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v2-0">v2.0</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v1-9">v1.9</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v1-8-1">v1.8.1</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v1-7-1">v1.7.1</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v1-7">v1.7</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v1-6">v1.6</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v1-5">v1.5</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v1-4-5">v1.4.5</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v1-4-3">v1.4.3</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v1-4">v1.4</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v1-3">v1.3</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v1-2-1">v1.2.1</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#v1-0">v1.0</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#License" target="_blank">License</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#idocs_templates" target="_blank">More PHP Scripts</a>
+                  </li>
+				  <li class="nav-item">
+                     <a class="nav-link" href="#themes" target="_blank">More Themes</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#" target="_blank">API Docs (Coming Soon)</a>
+                  </li>
+
+               </ul>
+            </div>
+            <!-- Docs Content
+               ============================ -->
+            <div class="idocs-content">
+               <div class="container">
+                  <!-- Getting Started
+                     ============================ -->
+                  <section id="idocs_start">
+                     <h1>Documentation</h1>
+                     <h2>PlayTube - The Ultimate PHP Video CMS & Video Sharing Platform</h2>
+                     <p class="lead">PlayTube would like to welcome you to our official Knowledge Base. In our efforts to continually improve our product and assistance, we've established this new knowledge base and are filling it with user and developer documentation.</p>
+                     <hr>
+                     <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                           <ul class="list-unstyled">
+                              <li>
+                                 <strong>Current Version:</strong> 2.2.2
+                              </li>
+                              <li>
+                                 <strong>Author:</strong>
+                                 <a href="https://codecanyon.net/user/doughouzforest/portfolio" target="_blank">DoughouzForest</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                           <ul class="list-unstyled">
+                              <li>
+                                 <strong class="font-weight-700">Created On:</strong> 13 Oct 2017
+                              </li>
+                              <li>
+                                 <strong>Last Update:</strong> 30 June 2022
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <p class="alert alert-warning">If you have any questions that are beyond the scope of this help file, Please feel free to email via <a target="_blank" href="https://doughouzforest.ticksy.com/">Item Support Page</a>. </p>
+                     <p class="alert alert-danger"><strong>Important!</strong> This is the only official PlayTube PHP Script, please stay away from any cracked, nulled or stolen copies, they may contain malwares. <br> With the official PlayTube <strong>License</strong>, you get life time free updates, support, and custom work services.</p>
+
+                  </section>
+                  <hr class="divider">
+                  <!-- Installation
+                     ============================ -->
+                  <section id="idocs_installation">
+                     <h2>Installation</h2>
+                     <p class="lead">Follow the steps below to setup your site:</p>
+                     <ol>
+                        <li>Unzip the downloaded package and open the <strong>/Script</strong> folder to find all the script files. You will need to upload these files to your hosting web server using FTP or localhost in order to use it on your website. </li>
+                        <li> Below is the folder structure and needs to be uploaded to your website or localhost root directory: <br>
+                           <br>
+                           <a class="popup-img" href="assets/images/installation/installation-files.png">
+                           <img src="assets/images/installation/installation-files.png" class="img-fluid img-thumbnail" alt="image">
+                           </a>
+                        </li>
+                        <li>You should upload all the files.</li>
+                        <li>Once you are done uploading, open your browser <strong>(Google Chrome is recommended)</strong>.</li>
+                        <li>Go to <strong>http://www.YOUTSITE.com/install</strong>  </li>
+                        <li>Agree the Terms of Use then click <strong>Next</strong>.</li>
+                        <li>
+                           <p>
+                              <strong>Important!</strong> Before we start the installation, please make sure you have the following installed on your server:
+                           </p>
+                           <a class="popup-img" href="assets/images/installation/installation-req.png">
+                           <img src="assets/images/installation/installation-req.png" class="img-fluid img-thumbnail" alt="image">
+                           </a>
+                        </li>
+                        <li>
+                           In the second page, make sure to fill the required data: <br>
+                           <br>
+                           <a class="popup-img" href="assets/images/installation/installation-data.png">
+                           <img src="assets/images/installation/installation-data.png" class="img-fluid img-thumbnail" alt="image">
+                           </a>
+                           <ul>
+                              <li><strong>Purchase Code</strong> - Envato purchase code. <a href="https://www.youtube.com/watch?v=srghr25uBgc" target="_blank">
+                                 <i class="fas fa-external-link-alt"></i> What is this? </a>
+                              </li>
+                              <li><strong>SQL Host name</strong> - MySQL host name, e.g: localhost</li>
+                              <li><strong>SQL Username</strong> - MySQL username.</li>
+                              <li><strong>SQL Password</strong> - MySQL user password.</li>
+                              <li><strong>SQL Database</strong> - MySQL database name.</li>
+                              <li>
+                                 <strong>Site URL</strong> - Your Website URL, examples:
+                                 <ul>
+                                    <li>https://siteurl.com</li>
+                                    <li>https://www.siteurl.com</li>
+                                    <li>https://siteurl.com</li>
+                                    <li>https://subdomain.siteurl.com</li>
+                                    <li>http://localhost</li>
+                                    <li>https://siteurl.com/subfolder</li>
+                                 </ul>
+                              </li>
+                              <li><strong>Site Name</strong> - Your site name, max 32 characters.</li>
+                              <li><strong>Site Title</strong> - Your site title, max 100 characters.</li>
+                              <li><strong>Site E-mail</strong> - Your site email, ex: info@yourdomain.com, Gmail or Hotmail is not supported. It should be one of your server's emails.</li>
+                              <li><strong>Admin Username</strong> - Choose your admin username.</li>
+                              <li><strong>Admin Password</strong>- Choose your admin password.</li>
+                           </ul>
+                        </li>
+                        <li>Once you have wrote the information, please click the install button and wait for a while, the installation process may take up to 5 minutes.</li>
+                        <li>We are ready to go!</li>
+                     </ol>
+                     <p>Hmm, using <strong>Nginx</strong>? if your server is using Nginx, please follow the last steps below:</p>
+                     <ul>
+                        <li>Open your server's root <strong>nginx.conf</strong> file, most of the time It's located it in: <strong>/etc/nginx/nginx.conf</strong> </li>
+                        <li>Open the home directory of the script, you should be able to find this file <strong>nginx.conf</strong>.</li>
+                        <li>Open the located file, and copy its content to your root nginx.conf file: <strong>/etc/nginx/nginx.conf</strong>   </li>
+                        <li>If you find it something difficult to do, please contact your hosting provider, and they will do it for you easily.</li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="idocs_whats_next">
+                     <h2>What's Next?</h2>
+                     <p>Most Important Part After Installation is to redirect non www to www, or www to non www. Also it is important to setup SSL for your site, Please follow the steps below to do so.</p>
+                     <ul>
+                        <li>Open .htaccess file located in root directory.</li>
+                        <li>
+                           To redirect your website to SSL, copy and paste the code below after <strong>RewriteEngine On</strong>
+                           <pre>
+																										<code class="html hljs xml">RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]</code>
+																										</pre>
+                        </li>
+                        <li>
+                           To redirect your website to www, copy and paste the code below after <strong>RewriteEngine On</strong>
+                           <pre>
+																													<code class="html hljs xml">RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]</code>
+																												</pre>
+                        </li>
+                        <li>If you made any changes above, last step is to update your domain name in <code>config.php</code> file. </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <!-- Color Schemes
+                     ============================ -->
+                  <section id="idocs_color_schemes">
+                     <h2>Color Schemes</h2>
+                     <p>You can change your Website's Color Scheme in an instant. You can edit the main orange color from those files:</p>
+                     <ul>
+                        <li>
+                           <code>./themes/default/css/style.css</code> - Find and replace all #04abf2 with your new color.
+                        </li>
+                        <li>
+                           <code>./themes/youplay/css/style.css</code> - Find and replace all #04abf2 with your new color.
+                        </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <!-- Logo Settings
+                     ============================ -->
+                  <section id="idocs_logo_settings">
+                     <h2>Logo & Favicon Settings</h2>
+                     <p>The Logo Can Be Changed From <code>Admin Panel -> Design -> Update Website Design</code>
+                     </p>
+                  </section>
+                  <hr class="divider">
+                  <!-- Layout
+                     ============================ -->
+                  <section id="idocs_general_setup">
+                     <h2>General Setup</h2>
+                     <p class="lead mb-5">A setup guide on configuring 3rd party services.</p>
+                  </section>
+                  <!-- Header
+                     ============================ -->
+                  <section id="idocs_smtp">
+                     <h4>How to setup SMTP?</h4>
+                     <div class="alert alert-info">SMTP is used to send E-mails from your website.</div>
+                     <ul>
+                        <li>The first step of the process is to create an email account on your hosting package. This will be required for the SMTP configuration of your PlayTube website and it will also ensure that all emails from your website are successfully delivered to your users. You can create a new email account via cPanel.</li>
+                        <li>Once you have your email account created, you can proceed with the actual configuration of your PlayTube website. You need to access your website as administrator and go to SMTP settings from <code>Admin Panel -> Settings -> E-mail Setup -> E-mail Configuration</code>  </li>
+                        <li>
+                           Edit the following options:
+                           <ol>
+                              <li><strong>Server Type</strong> - Choose SMTP from the drop-down box</li>
+                              <li><strong>SMTP Host</strong> -mail.example.com (change example.com to your actual domain)</li>
+                              <li><strong>SMTP Username</strong> - Enter the email account created in the previous chapter</li>
+                              <li><strong>SMTP Password</strong> - Enter the password for your email account</li>
+                              <li><strong>SMTP Port</strong> - SMTP server port, most used 587 for TLS, and 465 for SSL encryption</li>
+                              <li><strong>SMTP Encryption</strong> - Choose SMTP encryption method</li>
+                           </ol>
+                        </li>
+                        <li>
+                           I made the changes above but my website is not sending any emails, what I can do?
+                           <ul>
+                              <li>Please test your SMTP credentials at <a href="https://www.smtper.net/" target="_blank">SMTPER</a>, if the same config worked by the test, please contact us.</li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="idocs_agora">
+                     <h4>How to setup Agora (Live Streaming) service?</h4>
+                     <div class="alert alert-info">Agora gives the user the ability to create live videos.</div>
+                     <ul>
+                        <li>Sign up <a href="https://sso.agora.io/en/signup/" target="_blank">here</a> to create an Agora account. After sign-up, you can log in <a href="https://console.agora.io/">here</a>.</li>
+                        <li>Once you finish the sign-up process, you can create an Agora project in Agora Console, To create an Agora project, do the following: <ol>
+                          <li>Enter the <a href="https://console.agora.io/projects" target="_blank">Project Management page</a>.</li>
+                          <li>Click <strong>Create</strong>.</li>
+                          <li>Follow the on-screen instructions to enter a project name and use case, and check <strong>Secured mode: APP ID + Token (Recommended)</strong> as the authentication mechanism.</li>
+                          <li>Click Submit. You can now see the project on the Project Management page.</li>
+                        </ol> </li>
+                        <li>To copy the <strong>App ID</strong>, find your project on the <a href="https://console.agora.io/projects" target="_blank">Project Management page</a> in Agora Console, and click the copy icon to the right of the App ID.</li>
+                        <li>To get an App Certificate, do the following: <ol>
+                          <li>On the <a href="https://console.agora.io/projects" target="_blank">Project Management page</a>, click the edit icon for the project you want to use.</li>
+                          <li>Click the copy icon under Primary Certificate.</li>
+                        </ol> </li>
+                        <li>Generate a Customer ID and Customer Secret <ol>
+                          <li>In <a href="https://console.agora.io/" target="_blank">Agora Console</a>, click the account name in the top right corner, and click <strong>RESTful API</strong> from the drop-down list to enter the <strong>RESTful API</strong> page.</li>
+                          <li>Click <strong>Add a secret</strong>, and click <strong>OK</strong>. A set of Customer ID and Secret is generated.</li>
+                          <li>Click <strong>Download</strong> in the <strong>Customer Secret</strong> column. Read the pop-up window carefully, and save the downloaded <code>key_and_secret.txt</code> file in a secure location.</li>
+
+                        </ol> </li>
+                        <li>Go to <code>Admin Panel -> Settings -> Setup Live Streaming -> Agora API Configuration</code> </li>
+                        <li>
+                           Edit the following options:
+                           <ol>
+                              <li><strong>App ID</strong> - Your APP ID we got one previous chapter</li>
+                              <li><strong>App Certificate</strong> - Your App Certificate we got one previous chapter</li>
+                              <li><strong>Customer ID</strong> - Enter the Customer ID you downloaded from <strong>key_and_secret.txt</strong>.</li>
+                              <li><strong>Customer Secret</strong> - Enter the Customer ID you downloaded from <strong>key_and_secret.txt</strong></li>
+                           </ol>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="idocs_nodejs">
+                     <h4>How to setup NodeJS (Messaging) plugin?</h4>
+                     <div class="alert alert-info">NodeJS gives the user the ability to chat and send messages in real-time.</div>
+                     <div class="alert alert-danger">
+                       Note: NodeJs is not required to run your script, if you are using shared hosting, or you can't get nodejs installed, you can still use the Ajax system (Default) in Admin Panel -> Settings -> General Configuration -> Other Settings -> Messaging & Notifications Server
+                     </div>
+                     <ul>
+                        <li>Please open <strong>./nodejs/config.json</strong> file, and configure your application. (MySQL, Site URL, server IP, listening port, Amazon)</li>
+                        <li> How can I install SSL on NodeJS server? <ol>
+                          <li>If you are using <strong>ajax</strong>, you can skip this step, if you are you using <strong>node.js and websockets</strong>, please follow the steps below:</li>
+                          <li>Open <code>./nodejs/config.json</code> file, set <strong>ssl</strong> to true.</li>
+                          <li>In the same file, find the keys: "ssl_privatekey_full_path", and "ssl_cert_full_path" and set their value. <ul>
+                            <li><strong>ssl_privatekey_full_path</strong> -  Path to your SSL .key file.</li>
+                            <li><strong>ssl_cert_full_path</strong> - Path to your SSL .crt file.</li>
+                          </ul> </li>
+                        </ol> </li>
+                     </ul>
+                     <div class="alert alert-warning">
+                       <strong>Important:</strong> <br>
+                       1. You need to have nodejs installed on your server, for more information about how to install nodejs, please read this <a href="https://nodejs.org/en/download/package-manager/" target="_blank">documentation</a>. <br>
+                       2. You need to whitelist your nodejs port number, for more infromation, please take a look <a href="https://www.journaldev.com/34113/opening-a-port-on-linux" target="">here</a>
+                     </div>
+                  </section>
+                  <hr class="divider">
+                  <section id="idocs_ffmpeg">
+                     <h4>How to setup FFMPEG?</h4>
+                     <div class="alert alert-info">FFMPEG is used to convert all video files to .mp4 format with different resolutions. It is required if you want to upload other files than mp4.</div>
+                     <ul>
+                        <li>We have included a patched version of FFMPEG in the script, located in <code>./assets/import/ffmpeg/</code>.</li>
+                        <li>Go to <code>Admin Panel -> Import & Upload Configuration -> FFMPEG Configuration</code> </li>
+                        <li>Enable FFMPEG, the default path for FFMPEG will be <code>./assets/import/ffmpeg/ffmpeg</code> </li>
+                        <li>Try to upload a video to your website, if the video has been converted, then your site is ready!</li>
+                        <li>
+                           If you get broken video file, or you still seeing "The video is being converted" then you'll need to use your own server ffmpeg library, to install ffmpeg on your server, follow these links:
+                           <ul>
+                              <li>How to install ffmpeg on Centos 7? <a href="https://linuxize.com/post/how-to-install-ffmpeg-on-centos-7/" target="_blank">Click Here</a>.</li>
+                              <li>How to install ffmpeg on Centos 8? <a href="https://linuxize.com/post/how-to-install-ffmpeg-on-centos-8/" target="_blank">Click Here</a>.</li>
+                              <li>How to install ffmpeg on Ubuntu? <a href="https://linuxize.com/post/how-to-install-ffmpeg-on-ubuntu-18-04/" target="_blank">Click Here</a>.</li>
+                              <li>How to install ffmpeg on debian? <a href="https://linuxize.com/post/how-to-install-ffmpeg-on-debian-9/" target="_blank">Click Here</a>.</li>
+                           </ul>
+                        </li>
+                        <li>
+                           Once you done with the installation, go back to <code>Admin Panel -> Import & Upload Configuration -> FFMPEG Configuration</code> & Edit the following options:
+                           <ol>
+                              <li><strong>FFmpeg binary file path</strong> - Write the path you installed ffmpeg on your server, mostly will be <code>/usr/bin/ffmpeg</code> or <code>ffmpeg</code> </li>
+                           </ol>
+                        </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="idocs_amazon_s3">
+                     <h4>How to setup Amazon S3 Storage?</h4>
+                     <div class="alert alert-info">The script will upload images and audio files to Amazon, your server's CPU load will decrease and your website performance will increase.</div>
+                     <ul>
+                        <li>Sign in to the AWS Management Console and open the Amazon S3 console at <a href="https://console.aws.amazon.com/s3/" target="_blank">https://console.aws.amazon.com/s3/</a>.</li>
+                        <li>Choose <strong>Create bucket</strong>.</li>
+                        <li>In Bucket name, enter a DNS-compliant name for your bucket.</li>
+                        <li>In Region, choose the AWS Region where you want the bucket to reside.</li>
+                        <li>Under Object Ownership, choose <strong>ACLs disabled</strong>.</li>
+                        <li>Choose <strong>Create bucket</strong> & You've created a bucket in Amazon S3.</li>
+                        <li><p>Also make sure you added the <strong>Bucket Policy</strong> by adding this JSON code in <strong>Bucket Policy</strong>, You need to replace <strong>YOUR-BUCKET-NAME</strong> with your Bucket Name.</p> <pre><code class="html hljs xml">{
+	"Version": "2008-10-17",
+	"Statement": [
+		{
+            "Sid": "AllowPublicRead",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
+        }
+    ]
+}</code></pre> </li>
+
+<li><p>Also make sure you have configered the <strong>CORS configuration</strong> by adding this <strong>JSON code</strong> below:</p> <pre><code class="html hljs xml">[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": [],
+        "MaxAgeSeconds": 3000
+    }
+]</pre></code> </li>
+                        <li>
+                           Next step is to get <strong>Security credentials.</strong>
+                           <ol>
+                              <li>Open the IAM console at <a href="https://console.aws.amazon.com/iam/" target="_blank">https://console.aws.amazon.com/iam/</a> </li>
+                              <li>On the navigation menu, choose Users.</li>
+                              <li>Choose your IAM user name (not the check box).</li>
+                              <li>Open the Security credentials tab, and then choose <strong>Create access key</strong>.</li>
+                              <li>
+                                 To see the new access key, choose <strong>Show</strong>. Your credentials resemble the following:
+                                 <ul>
+                                    <li>Access key ID: <code>AKIAIOSFODNN7EXAMPLE</code> </li>
+                                    <li>Secret access key: <code>wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY</code> </li>
+                                 </ul>
+                              </li>
+                           </ol>
+                        </li>
+                        <li>Go to <code>Admin Panel -> Import & Upload Configuration -> Amazon S3 Configuration</code> </li>
+                        <li>
+                           Edit the following options:
+                           <ol>
+                              <li><strong>Amazon Bucket Name</strong> - Your new bucket we created on the previous chapter</li>
+                              <li><strong>Amazon S3 Key</strong> - Your account access key ID</li>
+                              <li><strong>Amazon S3 Secret Key</strong> - Your account secret access key</li>
+                              <li><strong>Amazon S3 bucket Region</strong> - Your new bucket region we created on the previous chapter</li>
+                           </ol>
+                        <li>if your website is freshly installed and still brand new, you can ignore the upload process below and press only on <strong>Test Connection</strong> </li>
+                        <li>
+                           Transferring files from PlayTube to Amazon S3:
+                           <ol>
+                              <li>If you already have PlayTube installed on your server, and you want to use Amazon, make sure to upload the whole "upload/" folder to your bucket.</li>
+                              <li>We recommend to upload the folder and files via <a href="https://s3tools.org/s3cmd"  target="_blank">S3cmd</a>.</li>
+                              <li>Make sure to use <code>--acl-public</code> in your command line while uploading the files. </li>
+                           </ol>
+                        </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="idocs_digitalocean">
+                     <h4>How to setup Digitalocean Storage?</h4>
+                     <div class="alert alert-info">The script will upload images and audio files to Digitalocean, your server's CPU load will decrease and your website performance will increase.</div>
+                     <ul>
+                        <li>Sign in to the DigitalOcean Console at <a href="https://cloud.digitalocean.com/" target="_blank">https://cloud.digitalocean.com/</a>.</li>
+                        <li>You can create a Space from the <strong>Create menu</strong> by selecting Spaces. This will take you to the <strong>Create a Space</strong> page.</li>
+                        <li>Choose a datacenter region.</li>
+                        <li>Choose to restrict file listing.</li>
+                        <li>Choose a unique name for your Space.</li>
+                        <li>After choosing your settings, click <strong>Create a Space</strong>. This will take you to the newly-created Space’s Files tab, which displays the files and folders in its root.</li>
+                        <li>
+                           Next step is to get <strong>Security credentials.</strong>
+                           <ol>
+                              <li>Click on <strong>API</strong> on the left nav-bar.</li>
+                              <li>Under Spaces access keys, Click on <strong>Generate New Key</strong>. </li>
+                              <li>Grab the Key & secret key.</li>
+                           </ol>
+                        </li>
+                        <li>Go to <code>Admin Panel -> Import & Upload Configuration -> Digitalocean Configuration</code> </li>
+                        <li>
+                           Edit the following options:
+                           <ol>
+                              <li><strong>Digitalocean Space Name</strong> - Your new bucket we created on the previous chapter</li>
+                              <li><strong>Digitalocean Key</strong> - Your account access key</li>
+                              <li><strong>Digitalocean Secret</strong> - Your account secret access key</li>
+                              <li><strong>Digitalocean bucket region</strong> - Your new bucket region we created on the previous chapter</li>
+                           </ol>
+                        </li>
+                        <li>if your website is freshly installed and still brand new, you can ignore the upload process below and press only on <strong>Test Connection</strong> </li>
+                        <li>
+                           Transferring files from PlayTube to Digitalocean:
+                           <ol>
+                              <li>If you already have PlayTube installed on your server, and you want to use Digitalocean, make sure to upload the whole "upload/" folder to your bucket.</li>
+                              <li>We recommend to upload the folder and files via <a href="https://s3tools.org/s3cmd"  target="_blank">S3cmd</a>, <a href="https://docs.digitalocean.com/products/spaces/resources/s3cmd/" target="_blank">Setting Up s3cmd 2.x with DigitalOcean Spaces</a> </li>
+                              <li>Make sure to use <code>--acl-public</code> in your command line while uploading the files. </li>
+                           </ol>
+                        </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="FTP">
+                     <h4>How to setup FTP Storage?</h4>
+                     <div class="alert alert-info">You can store images and audio files in another server using this feature.</div>
+                     <ul>
+                        <li>The first step of the process is to create an FTP account on your hosting package. This will be required for the FTP configuration of your PlayTube website and it will also ensure that all files from your website are successfully uploaded to your server. You can create a new FTP account via cPanel.</li>
+                        <li>Once you have your FTP account created, you can proceed with the actual configuration of your PlayTube website. You need to access your website as administrator and go to FTP settings from <code>Admin Panel -> Import & Upload Configuration -> FTP Settings</code>  </li>
+                        <li>
+                           Edit the following options:
+                           <ol>
+                              <li><strong>FTP Hostname</strong> - ftp.example.com (change example.com to your actual domain, or use your own domain name)</li>
+                              <li><strong>FTP Username</strong> - Enter the FTP account you created in the previous chapter </li>
+                              <li><strong>FTP Password</strong> - Enter the password for your FTP  account</li>
+                              <li><strong>FTP Port</strong> - Enter your FTP port number, default 21.</li>
+                              <li><strong>FTP Path</strong> - Enter the path to /upload folder, default ./</li>
+                              <li><strong>FTP Endpoint</strong> - (IP or domain where the FTP server is pointed to) example: storage.com, files will be surved from here.</li>
+                           </ol>
+                        </li>
+                        <li>if your website is freshly installed and still brand new, you can ignore the upload process below and press only on <strong>Test Connection</strong> otherwise make sure to upload "upload/" folder to your FTP server.</li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="Wasabi">
+                     <h4>How to setup Wasabi (FTP) Storage?</h4>
+                     <div class="alert alert-info">The script will upload images and audio files to Wasabi, your server's CPU load will decrease and your website performance will increase.</div>
+                     <ul>
+                        <li>Sign in to the Wasabi Console at <a href="https://wasabi.com/" target="_blank">https://wasabi.com/</a>.</li>
+                        <li>Click On Create A bucket, and fill the required information, then create the bucket.</li>
+                        <li>
+                           Enabling FTP/FTPS
+                           <ul>
+                              <li>Click Settings on the Wasabi menu and open the FTP/FTPS drop-down.</li>
+                              <li>Slide the option to the right. The slide option is blue when FTP/FTPS is enabled.
+                                 When FTP/FTPS is disabled, the option is gray
+                              </li>
+                              <li>A message indicates that FTP/FTPS does not comply with normal IAM policies, which could be a potential security risk.</li>
+                              <li>If you want to continue to enable FTP/FTPS, enter agree in the message area and then click TOGGLE.</li>
+                           </ul>
+                        </li>
+                        <li><strong>Note:</strong> The user name and password for FTP/FTPS usage is the same as the user name and password for the root account.</li>
+                        <li>Grab those info, then go to <code>Admin Panel -> Import & Upload Configuration -> FTP Settings</code></li>
+                        <li>
+                           Edit the following options:
+                           <ol>
+                              <li><strong>FTP Hostname</strong> - region.wasabisys.com (change region to your actual bucket region), <a href="https://wasabi-support.zendesk.com/hc/en-us/articles/360015106031-What-are-the-service-URLs-for-Wasabi-s-different-regions-" target="_blank">Wasabi Region URLs</a> </li>
+                              <li><strong>FTP Username</strong> - Enter your Wasabi account username </li>
+                              <li><strong>FTP Password</strong> - Enter your Wasabi account passsword</li>
+                              <li><strong>FTP Port</strong> - 21.</li>
+                              <li><strong>FTP Path</strong> - Enter the path to /upload folder, default ./</li>
+                              <li><strong>FTP Endpoint</strong> - Your wasabi bucket Endpoint.</li>
+                           </ol>
+                        </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="WasabiS3">
+      							<h4>How to setup Wasabi (S3) Storage?</h4>
+      							<div class="alert alert-info">You can store images, videos, and all media files in Wasabi using S3 method.</div>
+      							<ul>
+      								<li>Sign in to the Wasabi Console at <a href="https://wasabi.com/" target="_blank">https://wasabi.com/</a>.</li>
+      								<li>Click On Create A bucket, and fill the required information, then create the bucket.</li>
+      								<li>
+      									Getting the access keys:
+      									<ul>
+      										<li>Go to <a href="https://console.wasabisys.com/#/access_keys" target="_blank">https://console.wasabisys.com/#/access_keys</a> </li>
+      										<li>Click on <strong>Create new access key</strong> </li>
+      										<li>A message indicates that your key was created, please download the file.</li>
+      										<li>Grab the access and secret keys from the downloaded file.</li>
+      									</ul>
+      								</li>
+      								<li>Grab those info, then go to <code>Admin Panel -> File Upload Configuration -> Wasabi Configuration</code></li>
+      								<li>
+      									Edit the following options:
+      									<ol>
+      										<li><strong>Wasabi Bucket Name</strong> - Your new bucket we created on the previous chapter</li>
+      										<li><strong>Wasabi Key</strong> - Your account access key</li>
+      										<li><strong>Wasabi Secret</strong> - Your account secret access key</li>
+      										<li><strong>Wasabi bucket region</strong> - Your new bucket region we created on the previous chapter</li>
+      									</ol>
+      								</li>
+      								<li>if your website is freshly installed and still brand new, you can ignore the upload process below and press only on <strong>Test Connection</strong> </li>
+      								<li>
+      									Transferring files from WoWonder to Wasabi:
+      									<ol>
+      										<li>If you already have WoWonder installed on your server, and you want to use Wasabi, make sure to upload the whole "upload/" folder to your bucket.</li>
+      										<li>We recommend to upload the folder and files via <a href="https://s3tools.org/s3cmd"  target="_blank">S3cmd</a>, <a href="https://docs.digitalocean.com/products/spaces/resources/s3cmd/" target="_blank">Setting Up s3cmd 2.x with DigitalOcean Spaces</a> </li>
+      										<li>Make sure to use <code>--acl-public</code> in your command line while uploading the files. </li>
+      									</ol>
+      								</li>
+      							</ul>
+      						</section>
+      						<hr class="divider">
+                  <section id="idocs_onesingal">
+                     <h4>How to setup OneSignal?</h4>
+                     <div class="alert alert-info">OneSignal is used to push notifications to the user, even if the playtube website is closed.</div>
+                     <ul>
+                        <li>Sign in to the Onesignal Console at <a href="https://onesignal.com/" target="_blank">https://onesignal.com/</a>.</li>
+                        <li>Click on <strong>New App/Website</strong> </li>
+                        <li>Choose your app name and platform then click next.</li>
+                        <li>Fill the form with your website infromation, then click save.</li>
+                        <li>In next page, ignore the page and click on Finish.</li>
+                        <li>On top navbar, click on <strong>Keys & IDs</strong> </li>
+                        <li>Grab your OneSignal App ID & Rest API Key then go to <code>Admin Panel -> Mobile & API Settings -> Push Notifications Settings</code></li>
+                        <li>
+                           Edit the following options for Android & IOS:
+                           <ol>
+                              <li><strong>OneSignal APP ID</strong> - Enter the OneSignal App ID you created in the previous chapter  </li>
+                              <li><strong>REST API Key</strong> - Enter the Rest API Key you created in the previous chapter </li>
+                           </ol>
+                        </li>
+                        <li><strong>Note:</strong> Every platform requires a new app, for example you need to create a separate app for Android, and another one for IOS.</li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="reCaptcha">
+                     <h4>How to get Google reCaptcha key?</h4>
+                     <div class="alert alert-info">Google reCaptcha is required if you enable reCaptcha from Admin Panel, it is used to prevent spam accounts.</div>
+                     <ul>
+                        <li>Sign in to the Google reCaptcha Admin at <a href="https://www.google.com/recaptcha/admin" target="_blank">https://www.google.com/recaptcha/admin</a>.</li>
+                        <li>On the top right corner, click on the plus <strong>+</strong> icon. </li>
+                        <li>Fill the required infromation and choose <strong>reCaptcha v2</strong>, once selected choose <strong>"I'm not a robot" Checkbox</strong></li>
+                        <li>Add your domain name, then click submit.</li>
+                        <li>Click on <strong>Subscribe to Test</strong> </li>
+                        <li>Fill the information then add the API to your app we created above. </li>
+                        <li>Grab and copy <strong>SITE KEY</strong> .</li>
+                        <li>
+                           Go to <code>Admin Panel -> Settings -> General Configuration -> Login & Registration</code> Edit the following options:
+                           <ol>
+                              <li>Enable reCaptcha by clicking on the toggle.</li>
+                              <li><strong>Recaptcha Key</strong> - Enter the site key you created in the previous chapter. </li>
+                           </ol>
+                        </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="youtube_api">
+                     <h4>How to get YouTube API Key?</h4>
+                     <div class="alert alert-info">YouTube API is required to import videos from YouTube.</div>
+                     <ul>
+                       <li>Go to the <a href="https://console.developers.google.com/" target="_blank">Google API Manager</a> console and log in using your Google credentials.</li>
+                       <li>After this click on <a href="https://console.cloud.google.com/projectcreate" target="_blank">Create Project</a> link for create new project.</li>
+                       <li>Enter <strong>Project Name</strong> and click on <strong>Create</strong> button.</li>
+                       <li>Select the project from the dropdown menu beside <strong>Google Cloud Platform</strong>.</li>
+                       <li>Click on <a href="https://console.cloud.google.com/apis/dashboard" target="_blank">APIs & Services</a> then click on <strong>+ENABLE APIS AND SERVICES</strong> .</li>
+                       <li>Search for <strong>YouTube Data API v3</strong> and enable <strong>YouTube Data API v3</strong>.</li>
+                       <li>Once enabled, click on <a href="https://console.cloud.google.com/apis/credentials" target="_blank">Credentials</a>, on the top nav-bar, click on <strong>+Create credentials</strong> then click on <strong>API key</strong></li>
+
+                      <li>Grab the key and Click <strong>Close</strong>.</li>
+                        <li>
+                           Go to <code>Admin Panel -> Settings -> Import & Upload Configuration -> Import Configuration</code>, edit the following options:
+                           <ol>
+                              <li>Enable <strong>Import Videos System</strong> by clicking on the toggle.</li>
+                              <li><strong>YouTube API Key</strong> - Enter the API key you created in the previous chapter. </li>
+                           </ol>
+                        </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="twitch_id">
+                     <h4>How to get Twitch Client ID?</h4>
+                     <div class="alert alert-info">You can import videos from Twitch by enabling this feature.</div>
+                     <ul>
+                       <li>Log in to the <a href="https://dev.twitch.tv/login">developer console</a> using your Twitch account. If you don’t have an account, select the <strong>Sign Up</strong> tab to create one.</li>
+                       <li>Select the <strong>Applications</strong> tab and then click <strong>Register Your Application</strong>.</li>
+                       <li>Set <strong>Name</strong> to your application’s name. The name doesn’t matter for this exercise but it must be unique within all Twitch applications.</li>
+                       <li>Set <strong>OAuth Redirect URLs</strong> to the callback URL that your app uses for authorizations. Add your domain name here. Then, click <strong>Add</strong>.</li>
+                       <li>Select the <strong>Category</strong> of application that your app belongs to. For this example, it doesn’t matter which category you select.</li>
+                       <li>Click <strong>Create</strong>.</li>
+                       <li>Back in the <strong>Applications</strong> tab, locate your app under <strong>Developer Applications</strong>, and click <strong>Manage</strong>.</li>
+                       <li>You will find <strong>Client ID</strong> there</li>
+                        <li>
+                           Go to <code>Admin Panel -> Settings -> Import & Upload Configuration -> Import Configuration</code> and scroll down a bit, and edit the following options:
+                           <ol>
+                              <li>Enable <strong>Import Twitch videos</strong> by clicking on the toggle.</li>
+                              <li><strong>Twitch Client Id</strong> - Enter the API key you created in the previous chapter. </li>
+                           </ol>
+                        </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <!-- Content
+                     ============================ -->
+                  <section id="sociallogin">
+                     <h2>Social Login Setup</h2>
+                     <p class="lead mb-5">PlayTube comes with a lot of social login plugins, your users can register to your website with one click! <br> Here is a setup guide on configuring social login.</p>
+                  </section>
+                  <section id="Facebook">
+                     <h4>How to setup Facebook social login plugin?</h4>
+                     <ul>
+                       <li>Log in to your Facebook account.</li>
+                       <li>Go to <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a>, click on <strong>My Apps</strong> and press <strong>Create App</strong>.</li>
+                       <li>Select <strong>Consumer</strong>. and click <strong>Next</strong>. </li>
+                       <li>Set the <strong>Display Name</strong> of your application.</li>
+                       <li>Enter the <strong>Contact Email</strong>.</li>
+                       <li>Click on <strong>Create App</strong>. </li>
+                       <li>Navigate to <strong>Facebook Login</strong> and press the <strong>Set up</strong> button.</li>
+                       <li>Select <strong>Web</strong> from the displayed platforms.</li>
+                       <li>Go to the <strong>Settings</strong> on the left nav bar section and choose <strong>Basic</strong>.</li>
+                       <li>In the appeared menu some of the fields are generated automatically. All you need to do is fill in the rest of them, such as <strong>App Domains</strong>, <strong>Contact Email</strong>, <strong>Privacy Policy URL</strong>, <strong>Terms Of Service</strong> in particular. <ol>
+                         <li><strong>App Domains</strong> - Enter your domain name, without http or https (example.com, www.example.com).</li>
+                         <li><strong>Privacy Policy URL </strong> Enter your website's privacy policy URL (example.com/terms/privacy). </li>
+                         <li><strong>Terms of Service URL </strong> Enter your website's Terms of Service URL (example.com/terms/terms). </li>
+                         <li><strong>User Data Deletion </strong> Enter your website's Terms of Service URL (example.com/terms/terms). </li>
+                         <li><strong>Category</strong> - Choose your app category. </li>
+                       </ol>  </li>
+                       <li>Click on <strong>Save changes</strong>. </li>
+                       <li>Go to the left nav bar section and choose <strong>Facebook Login</strong> then click on <strong>Settings</strong> .</li>
+                       <li>Scroll down a bit and find <strong>Valid OAuth Redirect URIs</strong> </li>
+                       <li>Add the following Redirect URIs: <ol>
+                         <li><code>https://yourwebsite.com/social-login.php?provider=Facebook</code></li>
+                         <li><code>https://www.yourwebsite.com/social-login.php?provider=Facebook</code></li>
+                       </ol>  </li>
+                       <li>Click on <strong>Save changes</strong> </li>
+                       <li>On the top you'll see this message <strong>Your app has Standard Access to public_profile. To use Facebook Login, switch public_profile to Advanced Access</strong> Click on <strong>Get Advanced Access</strong> <ol>
+                         <li>Enter <strong>email</strong> in the search box, then click <strong>Get Advanced Access</strong>, confirm the form.</li>
+                         <li>Enter <strong>public_profile</strong> in the search box, then click <strong>Get Advanced Access</strong>, confirm the form.</li>
+                       </ol> </li>
+                       <li>Last step is to set the app mode to <strong>Live</strong> <ol>
+                         <li>On the top navbar, you'll find <strong>App Mode</strong>, click the toggle and set the app to <strong>Live</strong> </li>
+                         <li>Complete <strong>Data Use Checkup</strong> (If required)</li>
+                       </ol> </li>
+                       <li>Again, go to the <strong>Settings</strong> on the left nav bar section and choose <strong>Basic</strong>.</li>
+                       <li>Grab and copy <strong>App ID</strong> and <strong>App Secret</strong>. </li>
+                       <li>
+                          Go to <code>Admin Panel -> Settings -> Social Login Settings -> Facebook Configuration</code> & Edit the following options:
+                          <ol>
+                             <li><strong>Application ID</strong> - Enter the App ID.</li>
+                             <li><strong>Application Secret Key</strong> - Enter the App Secret. </li>
+                             <li>Enable <strong>Facebook Login</strong>.</li>
+                          </ol>
+                       </li>
+
+                     </ul>
+                     <div class="alert alert-warning">
+                       <strong>Note:</strong> When you enter the URL of your website in to the <strong>App Domains</strong> field, make sure that it does match the URL of your website 100%. <br>This means, if you go to your website and then check the URL in the browser and the URL does look like <strong>http://www.domain.com</strong> then you need to enter the exact same URL. If your website URL is <strong>http://domain.com</strong> then you need to enter it that way, without using the www at the front of the name. <br>Use the same URL for the <strong>Valid OAuth Redirect URIs</strong> field. <br>If these entries do not completely match the URL of your website, the application won’t work and it will show an error message when you try to connect to the App.
+                     </div>
+                  </section>
+                  <hr class="divider">
+                  <section id="Twitter">
+                     <h4>How to setup Twitter social login plugin?</h4>
+                     <ul>
+                       <li>Go to <a href="https://apps.twitter.com" target="_blank">apps.twitter.com</a> and click on <strong>Sign In</strong> in the top right. Log in using your personal Twitter credentials.</li>
+                       <li>Apply for API access: <a href="https://developer.twitter.com/en/apply-for-access" target="_blank">https://developer.twitter.com/en/apply-for-access</a>, without this process you can't create any apps. </li>
+                       <li>If this is your first time creating an App on Twitter. You will see a button to <strong>Create an app</strong> </li>
+                       <li>On the <strong>Create an application</strong> page, fill out all the information Twitter is asking for. <ol>
+                         <li><strong>App Name</strong> - Enter your website name.</li>
+                         <li><strong>Application description</strong> - Enter your website description.</li>
+                         <li><strong>Website URL</strong> - Enter your domain name, without http or https (example.com, www.example.com).</li>
+                         <li>Enable and click on <strong>Enable Sign with Twitter</strong>. </li>
+                         <li><strong>Callback URLs</strong> - Enter Redirect URIs, as following: <ul>
+                           <li><code>https://yourwebsite.com/social-login.php?provider=Twitter</code></li>
+                           <li><code>https://www.yourwebsite.com/social-login.php?provider=Twitter</code></li>
+
+                         </ul> </li>
+
+                         <li><strong>Privacy Policy URL </strong> - Enter your website's privacy policy URL (example.com/terms/privacy). </li>
+                         <li><strong>Terms of Service URL </strong> - Enter your website's Terms of Service URL (example.com/terms/terms). </li>
+                         <li><strong>Tell us how this app will be used </strong> - Fill the infromation. </li>
+
+                       </ol>  </li>
+                       <li>After you successfully created the Twitter application you’ll be redirected to its <strong>Details</strong> Tab. click on the <strong>Permissions</strong> tab. In this tab you will find a <strong>Access</strong> option. please choose <strong>Read and Write</strong> from the list, scroll down and click on the <strong>Update Settings</strong> button to save your changes. <ul>
+                         <li><strong>Request email address from users</strong> option should be enabled for Social Login plugin.</li>
+                       </ul> </li>
+                       <li>After you make sure, that the settings have been saved, go to the application’s API keys page by clicking on the <strong>Keys and Tokens</strong> tab.</li>
+                       <li>Grab and copy <strong>API key</strong> and <strong>API secret key</strong>. </li>
+                       <li>
+                          Go to <code>Admin Panel -> Settings -> Social Login Settings -> Twitter Configuration</code> & Edit the following options:
+                          <ol>
+                             <li><strong>Consumer Key</strong> - Enter the API key.</li>
+                             <li><strong>Consumer Secret</strong> - Enter the API secret key. </li>
+                             <li>Enable <strong>Twitter Login</strong>.</li>
+                          </ol>
+                       </li>
+                     </ul>
+                     <div class="alert alert-warning">
+                       <strong>Note:</strong> When you enter the URL of your website in to the <strong>Website URL</strong> field, make sure that it does match the URL of your website 100%. <br> This means, if you go to your website and then check the URL in the browser and the URL does look like <strong>http://www.domain.com</strong> then you need to enter the exact same URL. If your website URL is <strong>http://domain.com</strong> then you need to enter it that way, without using the www at the front of the name. <br>Use the same URL for the <strong>Callback URL</strong> field. <br>If these entries do not completely match the URL of your website, the application won’t work and it will show an error message when you try to connect to the App.
+                     </div>
+                  </section>
+                  <hr class="divider">
+                  <section id="Google">
+                     <h4>How to setup Google+ social login plugin?</h4>
+                     <ul>
+                       <li>Go to the <a href="https://console.developers.google.com/" target="_blank">Google API Manager</a> console and log in using your Google credentials.</li>
+                       <li>After this click on <a href="https://console.cloud.google.com/projectcreate" target="_blank">Create Project</a> link for create new project.</li>
+                       <li>Enter <strong>Project Name</strong> and click on <strong>Create</strong> button.</li>
+                       <li>Select the project from the dropdown menu beside <strong>Google CLoud Platform</strong>.</li>
+                       <li>Click on <a href="https://console.cloud.google.com/apis/dashboard" target="_blank">APIs & Services</a> then click on <strong>+ENABLE APIS AND SERVICES</strong> .</li>
+                       <li>Search for <strong>Google+</strong> and enable <strong>Google+ API</strong>.</li>
+                       <li>Once enabled, click on <a href="https://console.cloud.google.com/apis/credentials" target="_blank">Credentials</a>, on the top nav-bar, click on <strong>+Create credentials</strong> then click on <strong>Oauth client ID</strong></li>
+                       <li>In <strong>OAuth consent screen</strong> page, choose <strong>External</strong>, fill the form and click <strong>Save and Continue</strong>. <ul>
+                         <li>In <strong>Authorized domains</strong> section, make sure to add your own domain name with or without www. </li>
+                       </ul> </li>
+                       <li>On the next page, you'll see the button <strong>Add or remove scopes</strong>, click on it. <ul>
+                         <li>Look for <strong>auth/userinfo.email</strong> and select it. </li>
+                         <li>Look for <strong>auth/userinfo.profile</strong> and select it. </li>
+                         <li>Scroll down and click on <strong>UPDATE</strong>. </li>
+                       </ul> </li>
+                       <li>If you successfully added the new scopes, click on <strong>SAVE AND CONTINUE</strong>. </li>
+                       <li>Ignore the <strong>Test users</strong> section and click on <strong>SAVE AND CONTINUE</strong>. </li>
+                       <li>Scroll down and click on <strong>BACK TO DASHBOARD</strong>. </li>
+                       <li>On the next page, click on <strong>PUBLISH APP</strong> and publish your application. </li>
+                       <li>On the left nav bar, click on <strong>Credentials</strong>, on the top nav-bar, click on <strong>+Create credentials</strong> then <strong>Oauth client ID</strong> <ul>
+                         <li>In <strong>Application type</strong>, choose web application.</li>
+                         <li>In <strong>Authorized redirect URIs</strong>, add the following URIs: <ol>
+                           <li><code>https://yourwebsite.com/social-login.php?provider=Google</code></li>
+                           <li><code>https://www.yourwebsite.com/social-login.php?provider=Google</code></li>
+                         </ol> </li>
+
+                       </ul> </li>
+                       <li>Click on <strong>Create</strong> then you'll see your <strong>Client ID</strong> and <strong>Client secret</strong>, copy those keys and headback to your website. </li>
+                       <li>
+                          Go to <code>Admin Panel -> Settings -> Social Login Settings -> Google+ Configuration</code> & Edit the following options:
+                          <ol>
+                             <li><strong>Client ID</strong> - Enter the Client ID.</li>
+                             <li><strong>Client secret</strong> - Enter the Client secret. </li>
+                             <li>Enable <strong>Google+ Login</strong>.</li>
+                          </ol>
+                       </li>
+                     </ul>
+                     <div class="alert alert-warning">
+                       <strong>Note:</strong> When you enter the URL of your website in to the <strong>App Domains</strong> field, make sure that it does match the URL of your website 100%. <br> This means, if you go to your website and then check the URL in the browser and the URL does look like <strong>http://www.domain.com</strong> then you need to enter the exact same URL. If your website URL is <strong>http://domain.com</strong> then you need to enter it that way, without using the www at the front of the name. <br>Use the same URL for the <strong>Authorized redirect URIs</strong> field. <br>If these entries do not completely match the URL of your website, the application won’t work and it will show an error message when you try to connect to the App.
+                     </div>
+                  </section>
+
+                  <hr class="divider">
+                  <section id="LinkedIn">
+                     <h4>How to setup LinkedIn social login plugin?</h4>
+                     <ul>
+                       <li>Go to the LinkedIn developer site: <a href="https://developer.linkedin.com/" target="_blank">https://developer.linkedin.com/</a> .</li>
+                       <li>Click the <strong>Create App</strong> button on the banner.</li>
+                       <li>To correctly create the application, please fill in the application sections, which are explained below. <ul>
+                         <li><strong>App Name</strong> - Enter a name for your application.</li>
+                         <li><strong>LinkedIn Page</strong> - Select an existing company or choose a New Company. If you select the new company, you will be asked to enter a company name.</li>
+                         <li><strong>Privacy policy URL </strong> - Enter your website's privacy policy URL (example.com/terms/privacy).</li>
+                         <li><strong>App logo </strong> - Upload an icon for your application.</li>
+                         <li>Click on <strong>Create app</strong>. </li>
+                       </ul> </li>
+                       <li>On the app page, scroll down, you'll find <strong>Additional settings</strong>, look for <strong>Domains</strong> and add your own domain name.</li>
+                       <li>On same page, scroll up and click on <strong>Auth</strong>.</li>
+                       <li>In <strong>Authorized redirect URLs for your app</strong>, add the following URIs: <ol>
+                         <li><code>https://yourwebsite.com/social-login.php?provider=Linkedin</code></li>
+                         <li><code>https://www.yourwebsite.com/social-login.php?provider=Linkedin</code></li>
+                       </ol> </li>
+                       <li>On the <strong>Auth</strong> page, you'll find <strong>Client ID</strong> and <strong>Client secret</strong>, copy those keys and headback to your website. </li>
+                       <li>
+                          Go to <code>Admin Panel -> Settings -> Social Login Settings -> LinkedIn Configuration</code> & Edit the following options:
+                          <ol>
+                             <li><strong>Application ID</strong> - Enter the Client ID.</li>
+                             <li><strong>Application Secret Key</strong> - Enter the Client secret. </li>
+                             <li>Enable <strong>LinkedIn Login</strong>.</li>
+                          </ol>
+                       </li>
+                     </ul>
+                     <div class="alert alert-warning">
+                       <strong>Note:</strong> When you enter the URL of your website in to the <strong>Domains</strong> field, make sure that it does match the URL of your website 100%. <br> This means, if you go to your website and then check the URL in the browser and the URL does look like <strong>http://www.domain.com</strong> then you need to enter the exact same URL. If your website URL is <strong>http://domain.com</strong> then you need to enter it that way, without using the www at the front of the name. <br>Use the same URL for the <strong>Authorized redirect URLs for your app</strong> field. <br>If these entries do not completely match the URL of your website, the application won’t work and it will show an error message when you try to connect to the App.
+                     </div>
+                  </section>
+                  <hr class="divider">
+                  <section id="Vkontakte">
+                     <h4>How to setup Vkontakte social login plugin?</h4>
+                     <ul>
+                       <li>Go to the VK developers page: <a href="https://vk.com/apps" target="_blank">https://vk.com/apps</a> </li>
+                       <li>Click on <strong>Create</strong>.</li>
+                       <li>On <strong>Platform</strong>, select <strong>Website</strong>, and add your own domain name.</li>
+                       <li>To correctly create the application, please fill in the application sections, which are explained below. <ul>
+                         <li><strong>Title</strong> - Enter a name for your application.</li>
+                         <li><strong>Description</strong> - Select an existing company or choose a New Company. If you select the new company, you will be asked to enter a company name.</li>
+                         <li><strong>Terms and Conditions URL </strong> - Enter your website's privacy policy URL (example.com/terms/terms).</li>
+                         <li><strong>Privacy policy URL </strong> - Enter your website's privacy policy URL (example.com/terms/privacy).</li>
+                         <li><strong>App logo </strong> - Upload an icon for your application.</li>
+                         <li>Click on <strong>Save</strong>. </li>
+                       </ul> </li>
+                       <li>On the left sidebar, click on <strong>Settings</strong> </li>
+                       <li>In this page, look for <strong>Authorized redirect URI</strong>, add the following URIs: <ol>
+                         <li><code>https://yourwebsite.com/social-login.php?provider=Vkontakte</code></li>
+                         <li><code>https://www.yourwebsite.com/social-login.php?provider=Vkontakte</code></li>
+                       </ol> </li>
+                       <li>In the same page, you'll find <strong>App ID</strong> and <strong>Secure key</strong>, copy those keys and headback to your website. </li>
+                       <li>
+                          Go to <code>Admin Panel -> Settings -> Social Login Settings -> Vkontakte Configuration</code> & Edit the following options:
+                          <ol>
+                             <li><strong>Application ID</strong> - Enter the App ID.</li>
+                             <li><strong>Application Secret Key</strong> - Enter the Secure key. </li>
+                             <li>Enable <strong>Vkontakte Login</strong>.</li>
+                          </ol>
+                       </li>
+                     </ul>
+                     <div class="alert alert-warning">
+                       <strong>Note:</strong> When you enter the URL of your website in to the <strong>Website URL</strong> field, make sure that it does match the URL of your website 100%. <br> This means, if you go to your website and then check the URL in the browser and the URL does look like <strong>http://www.domain.com</strong> then you need to enter the exact same URL. If your website URL is <strong>http://domain.com</strong> then you need to enter it that way, without using the www at the front of the name. <br>Use the same URL for the <strong>Authorized redirect URI</strong> field. <br>If these entries do not completely match the URL of your website, the application won’t work and it will show an error message when you try to connect to the App.
+                     </div>
+                  </section>
+                  <hr class="divider">
+                  <section id="Discord">
+                     <h4>How to setup Discord social login plugin?</h4>
+                     <ul>
+                       <li>Visit <a href="https://discordapp.com/developers/applications" target="_blank">Discord developer portal</a> and sign in with your discord app developer account.</li>
+                       <li>On the page, Click on the <strong>New Application</strong> button and enter a <strong>Name</strong> for your app. Click on <strong>Save</strong>. </li>
+                       <li>Click on <strong>OAuth2</strong> form left section.</li>
+                       <li>Click on Add redirect and Enter Callback URL in that (Redirects), add the following URIs: <ol>
+                         <li><code>https://yourwebsite.com/social-login.php?provider=Discord</code></li>
+                         <li><code>https://www.yourwebsite.com/social-login.php?provider=Discord</code></li>
+                       </ol></li>
+                       <li>In the same page, you'll find <strong>Client Id</strong> and <strong>Client Secret</strong>, copy those keys and headback to your website. </li>
+                       <li>
+                          Go to <code>Admin Panel -> Settings -> Social Login Settings -> Discord Configuration</code> & Edit the following options:
+                          <ol>
+                             <li><strong>Application ID</strong> - Enter the App ID.</li>
+                             <li><strong>Application Secret Key</strong> - Enter the Secure key. </li>
+                             <li>Enable <strong>Discord Login</strong>.</li>
+                          </ol>
+                       </li>
+                     </ul>
+                     <div class="alert alert-warning">
+                       <strong>Note:</strong> When you enter the URL of your website in to the <strong>Callback URL</strong> field, make sure that it does match the URL of your website 100%. <br> This means, if you go to your website and then check the URL in the browser and the URL does look like <strong>http://www.domain.com</strong> then you need to enter the exact same URL. If your website URL is <strong>http://domain.com</strong> then you need to enter it that way, without using the www at the front of the name.
+                     </div>
+                  </section>
+                  <hr class="divider">
+
+                  <section id="Mailru">
+                     <h4>How to setup Mailru social login plugin?</h4>
+                     <ul>
+                       <li>Go to <a href="https://o2.mail.ru/app" target="_blank">https://o2.mail.ru/app</a> and sign in with your Mail.ru app developer account.</li>
+                       <li>Go to Apps and click on <strong>Create an Application</strong>.</li>
+                       <li>Enter <strong>App name</strong> in Project name field.</li>
+                       <li>Enter Redirect URI, add the following URIs: <ol>
+                         <li><code>https://yourwebsite.com/social-login.php?provider=Mailru</code></li>
+                       </ol> </li>
+                       <li>Click on <strong>Connect Site</strong> </li>
+                       <li>On the same page you will get your <strong>Client ID</strong> and <strong>Client Secret</strong> under the Editing the Application section.</li>
+                       <li>
+                          Go to <code>Admin Panel -> Settings -> Social Login Settings -> Mailru Configuration</code> & Edit the following options:
+                          <ol>
+                             <li><strong>Application ID</strong> - Enter the Client ID.</li>
+                             <li><strong>Application Secret Key</strong> - Enter the Client secret. </li>
+                             <li>Enable <strong>Mailru Login</strong>.</li>
+                          </ol>
+                       </li>
+                     </ul>
+                     <div class="alert alert-warning">
+                       <strong>Note:</strong> When you enter the URL of your website in to the <strong>Redirect URI</strong> field, make sure that it does match the URL of your website 100%. <br> This means, if you go to your website and then check the URL in the browser and the URL does look like <strong>http://www.domain.com</strong> then you need to enter the exact same URL. If your website URL is <strong>http://domain.com</strong> then you need to enter it that way, without using the www at the front of the name.
+                     </div>
+                  </section>
+                  <hr class="divider">
+                  <section id="WoWonder">
+                     <h4>How to setup WoWonder social login plugin?</h4>
+                     <p>If you are using WoWonder script, you can integrate your site with PlayTube.</p>
+                     <ul>
+                       <li>Login into your website that is using <strong>WoWonder</strong> script as admin.</li>
+                       <li>Go to <a href="#">https://yourwebsite.com/create-app</a>, replace <strong>yourwebsite.com</strong> with your own domain name.</li>
+                       <li>To correctly create the application, please fill in the application sections, which are explained below. <ul>
+                         <li><strong>Name</strong> - Your application name. This is used to attribute the source user-facing authorization screens. 32 characters max.</li>
+                         <li><strong>Domain </strong> - Enter your website URL (That is using <strong>PlayTube</strong> Script).</li>
+                         <li><strong>Redirect URI </strong> - <code>https://yourwebsite.com/wo_login.php</code>, replace <strong>yourwebsite.com</strong> with your own domain name (That is using <strong>PlayTube</strong> Script).</li>
+                         <li><strong>Description</strong> - Your application description, which will be shown in user-facing authorization screens. Between 10 and 200 characters max.</li>
+                         <li><strong>Image </strong> - Upload an icon for your application.</li>
+                         <li>Click on <strong>Create</strong>. </li>
+                       </ul> </li>
+                       <li>Get your <strong>App ID</strong> and <strong>App Secret</strong>.</li>
+                       <li>
+                          Go to <code>Admin Panel -> Settings -> Social Login Settings -> WoWonder Configuration</code> & Edit the following options:
+                          <ol>
+                             <li><strong>API Key</strong> - Enter the App ID.</li>
+                             <li><strong>API Secret</strong> - Enter the App Secret. </li>
+                             <li><strong>WoWonder Domain</strong> - Enter your website URL (That is using <strong>WoWonder</strong> Script). </li>
+                             <li><strong>WoWonder Icon</strong> - Enter your icon image URL (That is using <strong>WoWonder</strong> Script), example: <code>https://demo.wowonder.com/themes/default/img/icon.png</code> </li>
+                             <li>Enable <strong>WoWonder Login</strong>.</li>
+                          </ol>
+                       </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="Instagram">
+                     <h4>How to setup Instagram social login plugin?</h4>
+                     <p>Unfortunately, Instagram is not accepting any new applications anymore.</p>
+                     <div class="alert alert-danger">
+                        The remaining Instagram Legacy API permission ("Basic Permission") was disabled on June 29, 2020. As of June 29, third-party apps no longer have access to the Legacy API.
+                     </div>
+                  </section>
+                  <hr class="divider">
+                  <section id="QQ">
+                     <h4>QQ</h4>
+                     <ul>
+                       <li>Although not detailed in this configuration guide, you can create a new QQ app that enables users to log on to your web site by using their QQ account. To create a QQ developer account, you must complete a registration process that includes such tasks as providing a copy of your business license.</li>
+                       <li>If you already have a QQ developer account, you can create a social login app from the QQ developer’s site <a href="https://connect.qq.com" target="_blank">https://connect.qq.com</a> </li>
+                     </ul>
+                     <div class="alert alert-warning">
+                       Unfortunately, We could not obtain a developer account with QQ, therefore we are not pretty sure how to create an app and retrive the app keys.
+                     </div>
+                  </section>
+                  <hr class="divider">
+                  <section id="WeChat">
+                     <h4>WeChat</h4>
+                     <ul>
+                       <li>Although not detailed in this configuration guide, you can create a new WeChat app that enables users to log on to your web site by using their WeChat account. To create a WeChat developer account, you must complete a lengthy application process that requires supplying information such as your personal ID and business license</li>
+                       <li>If you already have a WeChat developer account, you can create a social login app from the WeChat developer’s site <a href="https://open.wechat.com/" target="_blank">https://open.wechat.com/</a> </li>
+
+                     </ul>
+                     <div class="alert alert-warning">
+                       Unfortunately, We could not obtain a developer account with WeChat, therefore we are not pretty sure how to create an app and retrive the app keys.
+                     </div>
+                  </section>
+
+                  <hr class="divider">
+                  <!-- Components
+                     ============================ -->
+                  <section id="payment_gateways">
+                     <h2>Payment Gateways Setup</h2>
+                     <p class="mb-5">A setup guide on configuring all payment gateways. </a>
+                     </p>
+                  </section>
+                  <section id="Stripe">
+                     <h4>Stripe</h4>
+                     <ul>
+                        <li>Go to <a href="https://stripe.com/" target="_blank">Stripe</a> & create a new account.</li>
+                        <li>Login to your dashboard & turn your account on by flipping the switch from “Test” to “Live”.</li>
+                        <li>Click <strong>Activate Account</strong> in the pop up window to fill out the standard business details Stripe needs to send you payments.</li>
+                        <li>Once you’ve completed the entire form, click <strong>Activate Account</strong>.</li>
+                        <li>Now that your account is live, go to <strong>Your Account</strong> and click on <strong>Account Settings</strong>. </li>
+                        <li>Click the <strong>API Keys</strong> tab & copy the <strong>Live Secret Key</strong> & <strong>Publishable Key</strong>.</li>
+                        <li>
+                           Go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find Stripe and edit the following options:
+                           <ol>
+                              <li>Enable <strong>Stripe Payment Method</strong> by clicking on the toggle.</li>
+                              <li><strong>Stripe version</strong> - v2 or v3. </li>
+                              <li><strong>Stripe API Secret Key</strong> - Your Stripe secret key that starts with sk_ </li>
+                              <li><strong>Stripe Publishable Key</strong> - Your Stripe publishable key that starts with pk_ </li>
+                           </ol>
+                        </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="PayPal">
+                     <h4>PayPal</h4>
+                     <ul>
+                        <li>Login to PayPal, then click here: <a href="https://developer.paypal.com/developer/applications/create" target="_blank">https://developer.paypal.com/developer/applications/create</a></li>
+                        <li>Set your app name, email address then click <strong>Create App</strong>.</li>
+                        <li>On the top right side, you can see two tabs, SandBox and Live, Choose <strong>Live</strong>.</li>
+                        <li>
+                           Go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find PayPal and edit the following options:
+                           <ol>
+                              <li>Enable <strong>PayPal Payment Method</strong> by clicking on the toggle.</li>
+                              <li><strong>PayPal Mode</strong> - Choose Live (In case your app is in Live mode). </li>
+                              <li><strong>PayPal Clinet ID</strong> - PayPal application ID you created in the previous chapter. </li>
+                              <li><strong>PayPal Secret Key</strong> - PayPal application secret key you created in the previous chapter. </li>
+                           </ol>
+                        </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="CashFree">
+                     <h4>CashFree</h4>
+                     <ul>
+                        <li>Go to <a href="https://www.cashfree.com/" target="_blank">Cashfree</a> website & sign in to your account with a registered email address.</li>
+                        <li>Click on <strong>Activate</strong> button to activate various payment gateways for your account.</li>
+                        <li>Now, you can click on <strong>View Dashboard</strong> to view account details.</li>
+                        <li>Go to <strong>Credentials</strong> tab to access the test API credentials for payment gateways. </li>
+                        <li>Click on <strong>Get Credentials</strong> tab to access the sandbox credentials</li>
+                        <li>View app ID & secret key under <strong>Test Credentials</strong> tab.</li>
+                        <li>
+                           Go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find CashFree and edit the following options:
+                           <ol>
+                              <li>Enable <strong>CashFree Payment Method</strong> by clicking on the toggle.</li>
+                              <li><strong>CashFree Mode</strong> - Choose Live (In case your app is in Live mode). </li>
+                              <li><strong>Client ID</strong> - CashFree application ID you created in the previous chapter. </li>
+                              <li><strong>Client Secret</strong> - CashFree application secret key you created in the previous chapter. </li>
+                           </ol>
+                        </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="RazorPay">
+                     <h4>RazorPay</h4>
+                     <ul>
+                       <li>Go to the <a href="https://razorpay.com/" target="_blank">Razorpay</a> website and Sign Up. </li>
+                       <li>Enter your work email address and a password for your Razorpay account and click <strong>Create Account</strong>.</li>
+                       <li>Fill Pre-sign Up <strong>Form</strong> </li>
+                       <li>Verify Email Address</li>
+                       <li>Once your account is created, you have access to the <strong>Test mode</strong> on the <strong>Dashboard</strong>. Test mode is used for testing purposes and does not involve actual money transactions. However, you would need to <strong>activate your account</strong> in order to accept live payments.</li>
+                       <li>To create an <strong>Application</strong>, follow this <a href="https://razorpay.com/docs/oauth/appclients/" target="_blank">RazorPay Guide</a>.</li>
+
+                       <li>
+                          Once your application was created, take the required keys then go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find RazorPay and edit the following options:
+                          <ol>
+                             <li>Enable <strong>RazorPay Payment Method</strong> by clicking on the toggle.</li>
+                             <li><strong>Application ID</strong> - CashFree application ID you created in the previous chapter. </li>
+                             <li><strong>Application Secret</strong> - CashFree application secret key you created in the previous chapter. </li>
+                          </ol>
+                       </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="PayStack">
+                     <h4>PayStack</h4>
+                     <ul>
+                       <li>Sign Up with <a href="https://paystack.com/" target="_blank">Paystack</a></li>
+                       <li>Verify your sign up using a verification link sent to your email.</li>
+                       <li>The next thing is to sign in to your new <strong>Paystack account</strong> </li>
+                       <li>On your <strong>Dashboard</strong> you will find your public and secret key</li>
+                       <li>
+                          Grab the keys, then go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find PayStack and edit the following options:
+                          <ol>
+                             <li>Enable <strong>PayStack Payment Method</strong> by clicking on the toggle.</li>
+                             <li><strong>Secret Key</strong> - CashFree application secret key you created in the previous chapter. </li>
+                          </ol>
+                       </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="PaySera">
+                     <h4>PaySera</h4>
+                     <ul>
+                       <li>Sign up with <a href="https://www.paysera.com/v2/en/index" target="_blank">PaySera</a> then Log in to your account. In the menu on the left choose <strong>Settings > Profile Settings > Service management > Change</strong>.</li>
+                       <li>Select <strong>Collection of payments online via e-banking and other systems</strong> and click on <strong>Order</strong>  </li>
+                       <li>In the left menu please select <strong>Projects and Activities > My projects</strong> and click on <strong>Add a new project</strong>.</li>
+                       <li>In the opened window, enter data of a new project: In the section <strong>Service provider</strong> enter your online domain name.</li>
+                       <li>If you are not using any platform, select I will enter the project address manually and enter the website address.</li>
+                       <li>If you are using a platform, then in the section I will use a platform, a list of platforms will be provided and, after selecting one of them, the address used will be entered automatically.</li>
+                       <li>In the section <strong>Service description</strong> briefly describe the services you provide. If you are selling physical goods, enter the refund policy and delivery terms. More information on the description of the project is provided here.</li>
+                       <li>You can change the information and service description later as needed: Enter the current phone number and email address in the section Contact details. If required, also specify other contact details, e.g. Skype. These contact details will be provided to your buyers together with a payment confirmation letter. The project ownership confirmation code is provided in the section Project confirmation; you should paste it in your website’s head section. This way we will be sure that you are the real owner of the website. Having completed the requested information, click on Save project.</li>
+                       <li>Make sure that the website already contains purchase and sale, delivery and refund terms, privacy policy and your contact details as a merchant. Submit the project for review only when the website has been fully prepared to be used by clients, the payment platform has been integrated and test payments have been performed. Your submitted project will be reviewed within one day.</li>
+                       <li>After creating a project, you will be provided with the data necessary for the technical integration of the payment platform <ol>
+                         <li>In the menu on the left under <strong>Projects and Activities > My projects</strong> you will find the project ID (Project number/projectid);</li>
+                         <li>In the menu on the left under <strong>Projects and Activities > My projects</strong> click on <strong>Project settings > General project settings</strong> and you will find the code required to confirm ownership of your website;</li>
+                         <li>In the menu on the left under <strong>Projects and Activities > My projects</strong> click on <strong>Project settings > General project</strong> settings and you will find your project password.</li>
+                       </ol> </li>
+                       <li>
+                          Go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find PaySera and edit the following options:
+                          <ol>
+                            <li>Enable <strong>PaySera Payment Method</strong> by clicking on the toggle.</li>
+                            <li><strong>PaySera Mode</strong> - Choose Live (In case your app is in Live mode). </li>
+                            <li><strong>Project ID</strong> - PaySera project ID you created in the previous chapter. </li>
+                            <li><strong>Account Password</strong> - Your PaySera project password. </li>
+                          </ol>
+                       </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="Iyzipay">
+                     <h4>Iyzipay</h4>
+                     <ul>
+                       <li>Create an account in <a href="https://www.iyzico.com/en" target="_blank">Iyzipay</a></li>
+                       <li>You can access the <strong>API and Security Key</strong> values, where you can test the services from the <strong>Settings</strong> menu, without the need for email activation</li>
+                       <li>Grab the keys then go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code> paste the keys in Iyzipay form and fill the rest of the infromation.</li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="Checkout">
+                     <h4>2Checkout</h4>
+                     <ul>
+                       <li>Go to: <a href="https://secure.2checkout.com/cpanel/" target="">https://secure.2checkout.com/cpanel/</a> and Sign in with your 2Checkout live account or create a new one.</li>
+                       <li>Now click on <strong>Integrations</strong> -> <strong>Webhooks & API</strong> and from API section, copy <strong>Merchant Code</strong>, <strong>Publishable Key</strong> and <strong>Private Key</strong>  </li>
+                       <li>
+                          Go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find 2checkout and edit the following options:
+                          <ol>
+                            <li>Enable <strong>2checkout Payment Method</strong> by clicking on the toggle.</li>
+                            <li><strong>2checkout Mode</strong> - Choose Live (In case your app is in Live mode). </li>
+                            <li><strong>Seller ID</strong> - Your Merchant ID. </li>
+                            <li><strong>Publishable Key</strong> - Publishable Key you copied in the previous chapter. </li>
+                            <li><strong>Private Key</strong> - Private Key you copied in the previous chapter. </li>
+                          </ol>
+                       </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="PayU">
+                     <h4>PayU</h4>
+                     <ul>
+                       <li>Go to <a href="https://www.payumoney.com/">https://www.payumoney.com/</a>, If you have created an account with PayUMoney, login, else Create Account. </li>
+                       <li>Once you have logged in into your account, click on <strong>Integration Details</strong> option under Integration Help</li>
+                       <li>Here are your <strong>Live Credentials - Merchant Key and Merchant Salt</strong>. Copy them.</li>
+                       <li>
+                          Go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find PayU and edit the following options:
+                          <ol>
+                            <li>Enable <strong>PayU Payment Method</strong> by clicking on the toggle.</li>
+                            <li><strong>PayU Mode</strong> - Choose Live (In case your app is in Live mode). </li>
+                            <li><strong>Merchant ID</strong> - Your Merchant ID you copied in the previous chapter. </li>
+                            <li><strong>Secret Key</strong> - Secret Key you copied in the previous chapter. </li>
+                          </ol>
+                       </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="Authorize">
+      							<h4>Authorize.Net</h4>
+      							<ul>
+      							  <li>Log into the <a href="https://account.authorize.net/">Merchant Interface</a>.</li>
+      							  <li>Click <strong>Account</strong> from the main toolbar.</li>
+      							  <li>Click <strong>Settings</strong> in the main left-side menu.</li>
+      							  <li>Click <strong>API Credentials & Keys</strong>.</li>
+      							  <li><p>Select <strong>New Transaction Key</strong>.</p> <div class="alert alert-warning">
+      							    <strong>Note:</strong> When obtaining a new Transaction Key, you may choose to disable the old Transaction Key by clicking the box titled, Disable Old Transaction Key Immediately. You may want to do this if you suspect your previous Transaction Key is being used fraudulently.
+      							  </div>  </li>
+      							  <li>Click <strong>Submit to continue</strong>.</li>
+      							  <li>Request and enter PIN for verification.</li>
+      							  <li>Your new Transaction Key is displayed.</li>
+      							  <li>If the Disable Old Transaction Key Immediately box is not checked, the old Transaction Key will automatically expire in 24 hours. When the box is checked, the Transaction Key expires immediately.</li>
+      							  <li>
+      							     Go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find Authorize.net and edit the following options:
+      							     <ol>
+      							       <li>Enable <strong>Authorize.net Payment Method</strong> by clicking on the toggle.</li>
+      							       <li><strong>Authorize.net Mode</strong> - Choose Live (In case your app is in Live mode). </li>
+      							       <li><strong>Authorize.Net API LOGIN ID</strong> - Your API Login ID. </li>
+      							       <li><strong>Authorize.Net TRANSACTION KEY</strong> - TRANSACTION KEY you copied in the previous chapter. </li>
+      							     </ol>
+      							  </li>
+      							</ul>
+      							</section>
+      							<hr class="divider">
+      						<section id="SecurionPay">
+      							<h4>SecurionPay</h4>
+      							<ul>
+      							  <li>You can find a detailed doc here: <a href="https://securionpay.helpjuice.com/90032-backoffice/529474-api-keys">https://securionpay.helpjuice.com/90032-backoffice/529474-api-keys</a> </li>
+      							  <li>
+      							     Once you got your keys, Go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find Securionpay and edit the following options:
+      							     <ol>
+      							       <li>Enable <strong>Securionpay Payment Method</strong> by clicking on the toggle.</li>
+      							       <li><strong>Securionpay Public key</strong> - Your Public key you copied in the previous chapter. </li>
+      							       <li><strong>Securionpay Secret key</strong> - Secret Key you copied in the previous chapter. </li>
+      							     </ol>
+      							  </li>
+      							</ul>
+      							</section>
+      							<hr class="divider">
+      							<section id="Yoomoney">
+      								<h4>Yoomoney (Yandex)</h4>
+      								<ul>
+      									<li>How to get your secret key: <a href="https://yookassa.ru/docs/support/merchant/payments/implement/keys?lang=en">https://yookassa.ru/docs/support/merchant/payments/implement/keys?lang=en</a> </li>
+
+      									<li>
+      										 Once you got your keys, Go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find Yoomoney and edit the following options:
+      										 <ol>
+      											 <li>Enable <strong>Yoomoney Payment Method</strong> by clicking on the toggle.</li>
+      											 <li><strong>Yoomoney Wallet ID</strong> - Your wallet ID. </li>
+      											 <li><strong>Secret key</strong> - Secret Key you copied in the previous chapter. </li>
+      										 </ol>
+      									</li>
+      								</ul>
+      								</section>
+      								<hr class="divider">
+      						<section id="coinbase">
+      							<h4>CoinBase</h4>
+      							<ul>
+      								<li>Go to CoinBase commerce <a href="https://commerce.coinbase.com/" target="_blank">https://commerce.coinbase.com/</a>, login or create account.</li>
+      								<li>Once you are logged in, go to <a href="https://commerce.coinbase.com/dashboard/settings" target="_blank">https://commerce.coinbase.com/dashboard/settings</a> </li>
+      								<li>Scroll down, find <strong>API keys</strong> then Click on <strong>Create an API key</strong> </li>
+      								<li>Click on <strong>Create API</strong> </li>
+      								<li>Grab the new API key </li>
+      								<li>
+      									Once you got your key, Go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find CoinBase and edit the following options:
+      									<ol>
+      										<li>Enable <strong>CoinBase Payment Method</strong> by clicking on the toggle.</li>
+      										<li><strong>API key</strong> - Your Public key you copied in the previous chapter. </li>
+      									</ol>
+      								</li>
+      							</ul>
+      						</section>
+      						<hr class="divider">
+      						<section id="CoinPayments">
+      							<h4>CoinPayments</h4>
+      							<ul>
+      								<li>Go to CoinPayments <a href="https://www.coinpayments.net/register" target="_blank">https://www.coinpayments.net/register</a>, and create a new account.</li>
+      								<li>Once you are logged in, go to <a href="https://www.coinpayments.net/acct-api-keys" target="_blank">https://www.coinpayments.net/acct-api-keys</a> </li>
+      								<li>Scroll down, and click <strong>Generate new key...</strong></li>
+      								<li>Copy both <strong>Public Key</strong> and <strong>Private Key</strong>.</li>
+      								<li>Click on <strong>Edit Permissions</strong> and scroll down to <strong>API Key Permissions</strong> </li>
+      								<li>Enable the following: get_basic_info, set_basic_info, get_tx_info, create_transfer, get_conversion_info then click on <strong>Update Permissions</strong> </li>
+      								<li>Grab the new API keys </li>
+      								<li>
+      									Once you got your keys, Go to <code>Admin Panel -> Payments & Ads -> Payment Configuration</code>, find CoinPayments and edit the following options:
+      									<ol>
+      										<li>Enable <strong>CoinPayments Payment Method</strong> by clicking on the toggle.</li>
+      										<li><strong>Merchant ID</strong> - Your account Merchant ID, you can get this ID from your account settings. </li>
+      										<li><strong>Secret Key</strong> - Your Public key you copied in the previous chapter. </li>
+      									</ol>
+      								</li>
+      							</ul>
+      						</section>
+
+                  <!-- Accordion
+                     ============================ -->
+
+                  <section id="Monetization">
+                     <h2>Monetization </h2>
+                     <div class="alert alert-success">
+                       Below, We have included some powerful features you can use to start earning money using PlayTube.
+                     </div> <br><br>
+                  </section>
+                  <section id="ads">
+                    <h4>Advertising System </h4>
+                    <ul>
+                      <li>What is <strong>Advertising System</strong>? <ul>
+                        <li><strong>Advertising System</strong> is a money earning feature, users can post ads in your website, with advertising system users can: <ol>
+                          <li>Upload Image ads to home page, sidebar and profile pages.</li>
+                          <li>Upload Video ads, play video ads before the video starts, charged by CPC & CPV.</li>
+                          <li>Pay by CPC/CPV.</li>
+                          <li>Monetization their videos and earn money from advertisers.</li>
+                        </ol> </li>
+                      </ul> </li>
+                      <li>How to turn on <strong>Advertising System</strong>? <ul>
+                        <li>You can turn Advertising System On/Off from <code>Admin Panel -> Payment & Ads -> Advertisement System </code></li>
+                      </ul>  </li>
+                      <li>How <strong>Advertising System</strong> Payment works? <ul>
+                        <li>CPC, CPV, paid by user's wallet</li>
+                      </ul>  </li>
+                      <li> What is <strong>CPC</strong>, <strong>CPV</strong>? <ul>
+                        <li> <strong>CPC</strong> mean cost per click, how much will the system charge the user from every ad click?</li>
+                        <li> <strong>CPV</strong> mean cost per view, how much will the system charge the user from every ad view?</li>
+                      </ul> </li>
+                      <li>How much can I earn from this system? <ul>
+                        <li> You can set the price you are willing to charge from advertisers from <code>Admin Panel -> Payment & Ads -> Advertisement System </code></li>
+                        <li> Your net earning will be (<strong>Cost Per Click</strong> - <strong>Publisher Earning</strong>) = Net Earnings, e.g: (<strong>0.5 - 0.02</strong>) = $0.48, so you'll get <strong>$0.48</strong> from each ad click.  </li>
+                      </ul>  </li>
+                    </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="Pro">
+                    <h4>Pro System </h4>
+                    <ul>
+                      <li>What is <strong>Pro System</strong>? <ul>
+                        <li><strong>Pro System</strong> is a monthly subscription feature, with Pro system users can: <ol>
+                          <li>Upload unlimited videos.</li>
+                          <li>Get Pro Badge (On profile picture).</li>
+                          <li>Show their videos on home page (featured videos).</li>
+                          <li>Download videos.</li>
+                          <li>Get more disk space.</li>
+                        </ol> </li>
+                      </ul> </li>
+                      <li>How to turn on <strong>Pro System</strong>? <ul>
+                         <li>You can turn Pro System On/Off from <code>Admin Panel -> Pro System -> Pro System Settings </code></li>
+                      </ul>  </li>
+                      <li>How <strong>Pro System</strong> Payment works? <ul>
+                       <li> Monthly subscription, paid by user's wallet.</li>
+                      </ul>  </li>
+                    </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="paid_channels">
+                    <h4>Channel Subscription System </h4>
+
+                    <ul>
+                      <li>What is <strong>Channel Subscription System</strong>? <ul>
+                        <li><strong>Channel Subscription System</strong> is a monthly subscription feature, with Channel Subscription users can: <ol>
+                          <li>Create a subscription plan for their channels.</li>
+                          <li>Earn money by new subscribers.</li>
+                        </ol> </li>
+                      </ul> </li>
+                      <li>How to turn on <strong>Channel Subscription System</strong>? <ul>
+                        <li>You can turn Channel Subscription System On/Off from <code>Admin Panel -> Settings -> General Configuration -> User Configuration -> Paid Subscribers </code></li>
+                      </ul>  </li>
+                      <li>How <strong>Channel Subscription System</strong> Payment works? <ul>
+                        <li> Monthly subscription, paid by user's wallet.</li>
+                      </ul>  </li>
+                      <li>How much can I earn from this system? <ul>
+                        <li> Your net earning will be (<strong>Commission Percentage</strong> * <strong>Subscription Price</strong> / <strong>100</strong>) = Net Earnings, e.g: (<strong>2 * 12</strong> / <strong>100</strong>) = $0.24, so you'll get <strong>$0.24</strong> from every new subscriber.  </li>
+                        <li>You can change the commission percentage from <code>Admin Panel -> Settings -> General Configuration -> User Configuration -> Paid Subscribers -> Commission </code></li>
+                      </ul>  </li>
+                    </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="self_hosted_ads">
+                    <h4>Self Hosted Ads </h4>
+
+                    <ul>
+                      <li>What is <strong>Self Hosted Ads</strong>? <ul>
+                        <li><strong>Self Hosted Ads</strong> is a money earning feature, with Self Hosted Ads you can: <ol>
+                          <li>Create free ads on entire website.</li>
+                          <li>Create video ads on player.</li>
+                          <li>Create vpaid/vast ads.</li>
+                          <li>Create image ads on player.</li>
+                        </ol> </li>
+                      </ul> </li>
+                      <li>How to turn on <strong>Self Hosted Ads</strong>? <ul>
+                        <li>You can create <strong>video ads</strong> from <code>Admin Panel -> Payments & Ads -> Manage Video Ads -> Create New Ad -> Video </code></li>
+                        <li>You can create <strong>image ads</strong> from <code>Admin Panel -> Payments & Ads -> Manage Video Ads -> Create New Ad -> Image </code></li>
+                        <li>You can create <strong>vast/vpaid ads</strong> from <code>Admin Panel -> Payments & Ads -> Manage Video Ads -> Create New Ad -> Vast/Vpaid </code></li>
+                        <li>You can create <strong>HTML ads</strong> from <code>Admin Panel -> Payments & Ads -> Manage Website Ads</code></li>
+                      </ul>  </li>
+                    </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="selling_videos">
+                    <h4>Paid Videos (Selling Videos)</h4>
+
+                    <ul>
+                      <li>What is <strong>Paid Videos</strong>? <ul>
+                        <li><strong>Paid Videos</strong> is a money earning feature, with Paid Videos users can: <ol>
+                          <li>Upload and sell their own videos.</li>
+                          <li>Upload and sell their own movies.</li>
+
+                        </ol> </li>
+                      </ul> </li>
+                      <li>How to turn on <strong>Paid Videos</strong>? <ul>
+                        <li>You can turn Paid Videos On/Off from <code>Admin Panel -> Settings -> Video & Player Settings -> Paid Videos Settings</code></li>
+                      </ul>  </li>
+                      <li>How <strong>Paid Videos</strong> Payment works? <ul>
+                        <li> Per video sale, paid by user's wallet.</li>
+                      </ul>  </li>
+                      <li>How much can I earn from this system? <ul>
+                        <li> Your net earning will be (<strong>Commission Percentage</strong> * <strong>Video Price</strong> / <strong>100</strong>) = Net Earnings, e.g: (<strong>2 * 12</strong> / <strong>100</strong>) = $0.24, so you'll get <strong>$0.24</strong> from every new subscriber.  </li>
+                        <li>You can change the <strong>commission percentage</strong> from <code>Admin Panel -> Settings -> Video & Player Settings -> Paid Videos Settings -> Commission</code></li>
+                        <li>You can set the <strong>commission</strong> to fixed mode to get a fixed amount from each sale.</li>
+                      </ul>  </li>
+                      <li>Can users rent out videos too? <ul>
+                        <li>Yes, they can rent out videos & movies too. </li>
+                        <li>You can change the <strong>commission percentage</strong> from <code>Admin Panel -> Settings -> Video & Player Settings -> Paid Videos Settings -> Renting Commission</code></li>
+                      </ul>  </li>
+                    </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="Features">
+                     <h2>PlayTube Features</h2>
+                     <p class="mb-5">General Information about PlayTube features. </a>
+                  </section>
+                  <section id="Languages">
+                     <h3>Languages </h3>
+                     <hr >
+                     <ul>
+                       <li>How to add a new <strong>language</strong>? <ul>
+                          <li>You can add new languages from <code>Admin Panel > Languages > Add New Language & Keys -> Add New Language</code>.</li>
+                       </ul></li>
+                     </ul>
+                     <ul>
+                       <li>How to set the <strong>default website language</strong>? <ul>
+                          <li>You can set the default language from <code>Admin Panel > Settings > General Configuration > Default Language</code>.</li>
+                       </ul></li>
+                     </ul>
+                     <ul>
+                       <li>How to add a new <strong>language key</strong>? <ul>
+                          <li>You can add new languages from <code>Admin Panel > Languages > Add New Language & Keys -> Add New Key</code>.</li>
+                       </ul></li>
+                     </ul>
+
+
+                  </section>
+                  <hr class="divider">
+                  <section id="Categories">
+                     <h3>Categories </h3>
+                     <hr >
+
+                     <ul>
+                       <li>How to <strong>edit</strong>, <strong>delete</strong> and <strong>add</strong> categories? <ul>
+                         <li>You can manage movies categories from <code>Admin Panel -> Categories -> Manage Categories</code> </li>
+                         <li>You can manage movies categories from <code>Admin Panel -> Movies -> Manage Categories</code> </li>
+                       </ul></li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="SEO">
+                     <h3>SEO & Pages </h3>
+                     <hr >
+                     <!-- <h5> How to edit pages SEO tags? </h5>
+                     <ul>
+                        <li>You can edit page SEO tags from <code>Admin Panel -> Pages -> Manage Pages SEO </code> </li>
+                     </ul>
+                     <hr > -->
+                     <ul>
+                       <li>How to edit <strong>terms</strong>, <strong>policy</strong>, <strong>about</strong>? <ul>
+                         <li>You can edit those pages from <code>Admin Panel -> Pages -> Manage Pages </code> </li>
+                       </ul> </li>
+                       <li>How to add, edit or delete <strong>FAQs</strong>?</strong> <ul>
+                         <li>You can edit those pages from <code>Admin Panel -> Pages -> Manage FAQs </code> </li>
+                       </ul> </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="movies">
+                     <h3>Movies System </h3>
+                     <ul>
+                       <li>What is <strong>Movies System</strong>? <ul>
+                         <li>
+                            With Movies System, users and admin can upload and sell movies.
+                         </li>
+                       </ul> </li>
+                       <li>How to enable <strong>Movies System</strong>? <ul>
+                         <li>You can enable <strong>Movies System</strong> from <code>Admin Panel -> Settings -> Video & Player Settings -> Movies System</code>.</li>
+                       </ul> </li>
+                       <li>How to upload a <strong>Movie</strong>? <ul>
+                         <li>Users can upload movies from <code>Account DropDown Menu -> Upload -> Movie</code>.</li>
+                       </ul> </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="import">
+                     <h3>Import System </h3>
+                     <ul>
+                       <li>What is <strong>Import System</strong>? <ul>
+                         <li>
+                            With our advanced <strong>Import System</strong>, you can import thousands of videos with easy automated method, you can import videos from: <ul>
+                              <li>YouTube</li>
+                              <li>Dailymotion</li>
+                              <li>Vimeo</li>
+                              <li>Twitch</li>
+                            </ul>
+                         </li>
+                       </ul> </li>
+                       <li>How to use the <strong>Import System</strong>? <ul>
+                         <li>You can start importing videos from  <code>Admin Panel -> Videos -> Import Videos</code>.</li>
+                         <li>Enter the keyword you want to import.</li>
+                         <li>Select <strong>Auto Import</strong> if you want to import videos automatically. </li>
+                         <li>Choose <strong>Category</strong>.</li>
+                         <li><strong>Import as (Username)</strong> - Set the username of the channel that will import the videos.  </li>
+                         <li>Click <strong>Search</strong> </li>
+                       </ul> </li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="updates">
+                     <h2>How To Update PlayTube?</h2>
+                     <p class="text-4">A detailed documentation on how to update your website to a new update. Don't worry the update process is very easy!</p>
+                     <ul>
+                       <li>First of all, you have to download the latest version from your codecanyon <a href="https://codecanyon.net/downloads" target="_blank">Downloads</a> page.</li>
+                       <li>Backup your website files & database using cPanel.</li>
+                       <li>
+                         <p>Once you have downloaded the script, you can find the update files in <code>./Update Guide</code> folder, as shown below:</p>
+                         <a class="popup-img" href="assets/images/updates/step1.png">
+                         <img src="assets/images/updates/step1.png" class="img-fluid img-thumbnail" alt="image">
+                         </a></li>
+                         <li><p>Choose the update version, and extract it to your Desktop.</p> <div class="alert alert-warning">
+                           <strong>Note:</strong> If you have missed an update or multiple updates, you have to update your site version by version manually. Please don't skip a version.
+                         </div> </li>
+                         <li><p>The extracted files structure should look like this:</p> <a class="popup-img" href="assets/images/updates/step2.png">
+                         <img src="assets/images/updates/step2.png" class="img-fluid img-thumbnail" alt="image">
+                         </a></li>
+                         <li>Upload <code>./update.php</code> to your server using FTP client: /path/to/playtube/update.php (Script root directory)</li>
+                         <li><p>Open the <code>./Script/</code> folder, upload and overwrite ALL files/folders (SELECT ALL) file(s) located inside <code>./Script/</code> folder to your server, if you have renamed your theme, please open <code>./Script/themes/default/</code> and upload & overwrite ALL files/folders to your theme folder as shown below:</p> <a class="popup-img" href="assets/images/updates/step3.png">
+                         <img src="assets/images/updates/step3.png" class="img-fluid img-thumbnail" alt="image">
+                         </a></p></li>
+                         <li>Once the files are uploaded, open and run http://www.YOURSITE.COM/update.php (replace YOURSITE.com with your domain).</li>
+                         <li><p>The update process may take up to 1 hour, once the update is done please go to Admin Panel and scroll down to verify the website has been updated as shown below: </p> <a class="popup-img" href="assets/images/updates/step4.png">
+                         <img src="assets/images/updates/step4.png" class="img-fluid img-thumbnail" alt="image">
+                         </a></li>
+                     </ul>
+                     <div class="alert alert-warning">
+                       <strong>Important!</strong> Please note that you may lose any custom work you done on the code if you update your script. Contact your developer to update your website without losing any custom features.
+                     </div>
+                  </section>
+                  <hr class="divider">
+                  <section id="Customization">
+                     <h2>Code Customization </h2>
+                     <p class="mb-5">We have included a Custom CSS/JS Files in the code so that you can better handle your Customizations for New Styles or Overwriting Default Theme Styles. Simply add all your Custom CSS/JS Codes in <code>Admin Panel -> Design -> Custom Design</code></p>
+                     <hr >
+                     <h5>Where can I modify the HTML tamplates? </h5>
+                     <ul>
+                        <li>You can find the layout files in <code>./themes/default/layout/</code></li>
+                        <li>The files extention is <strong>.html</strong></li>
+                     </ul>
+                     <hr >
+                     <h5>Where can I edit the stylesheet from? </h5>
+                     <ul>
+                        <li>You can edit the stylesheet from <code>./themes/default/css/</code></li>
+                        <li>The general style file is: <strong>style.css</strong></li>
+                     </ul>
+                     <hr >
+                     <h5>Where I can add my own code inside head/body/footer tags? </h5>
+                     <ul>
+                        <li>You can do that from <code>./themes/default/layout/container.html</code> </li>
+                     </ul>
+                     <hr >
+                     <h5>How can I create new themes? </h5>
+                     <ul>
+                        <li>Make a copy of ./themes/default/ folder, rename it, open ./YOUR_THEME/info.php and change the requested info there.</li>
+                        <li>Once you have changed the info, save the file, go to you <code>Admin Panel -> Design -> Themes</code>, and you'll find your theme there, under your theme name, click on activate.</li>
+                     </ul>
+                     <hr >
+                     <h5>How to edit & customize email templates which are sent for users? </h5>
+                     <ul>
+                        <li>You can do that from <code>Admin Panel -> Tools -> Manage E-mails</code></li>
+                     </ul>
+                     <hr >
+                     <h5>How can I edit the footer menu? </h5>
+                     <ul>
+                        <li>You can edit the footer from: <code>./themes/default/layout/footer/</code></li>
+                     </ul>
+                     <hr >
+                     <h5>Where are javascript files located? </h5>
+                     <ul>
+                        <li>You can edit the javscript code from <code>./themes/default/js/</code></li>
+                        <li>The general javascript file is: <strong>script.js</strong></li>
+                        <li>Some JS functions are located at <code>./themes/default/layout/extra-js/content.html</code></li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <!-- FAQ
+                     ============================ -->
+
+                  <section id="common_issues">
+                     <h2>Common Issues</h2>
+                     <p class="text-4">We listed some common issue you should be aware of and know how to fix them.</p>
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="accordion accordion-alterate arrow-right" id="popularTopics">
+                              <div class="card">
+                                 <div class="card-header" id="heading7">
+                                    <h5 class="mb-0">
+                                       <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">Why I get 500 internal service error?</a>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#popularTopics">
+                                    <div class="card-body"> This may cause due folder permission error, or apache issue, please contact your host provider and let them fix it for you. Please note this is not a script problem.</div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading8">
+                                    <h5 class="mb-0">
+                                       <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">I can't upload big videos, what to do?</a>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#popularTopics">
+                                    <div class="card-body"> Contact your server provider, and ask them to increase post_max_size, max_execution_time and upload_max_filesize in PHP.ini file. Please note this is not a script problem. </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading9">
+                                    <h5 class="mb-0">
+                                       <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">Why I get 404 when I visit some pages?</a>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#popularTopics">
+                                    <div class="card-body">
+                                       <p>Please make sure that the .htaccess file is uploaded to your server and updated to latest version.</p>
+                                       <p>If the file is exists, but you still face this issue, please contact your host provide, and let them enable mod_rewrite.</p>
+                                       <p>If you are using a VPS with Ubuntu Linux installed, please follow this <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-mod_rewrite-for-apache-on-ubuntu-14-04">guide</a>. </p>
+                                       <p>If you use Nginx in your server, please follow the last step in the <a href="start.html#code-section">installation page</a>. </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading10">
+                                    <h5 class="mb-0">
+                                       <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">My SMTP config is correct, but my website is not sending any emails?</a>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#popularTopics">
+                                    <div class="card-body"> Please test your SMTP credentials at <a href="https://www.smtper.net/" target="_blank">SMTPER</a>, if the same config worked by the test, please contact us. </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+                  <hr class="divider">
+                  <section id="idocs_faq">
+                     <h2>FAQs</h2>
+                     <p class="text-4">A FAQ is a list of frequently asked questions (FAQs).</p>
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="accordion accordion-alterate arrow-right" id="popularTopics">
+                              <div class="card">
+                                 <div class="card-header" id="heading1">
+                                    <h5 class="mb-0">
+                                       <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">What PHP framework PlayTube is built on?</a>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
+                                    <div class="card-body"> We don’t use any third party PHP frameworks, the script is built on Pure PHP code, we use our own framework basically.</div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading2">
+                                    <h5 class="mb-0">
+                                       <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Can I customize PlayTube?</a>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                                    <div class="card-body"> The code is open source, you can edit, add, remove any code you would like. </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading3">
+                                    <h5 class="mb-0">
+                                       <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Which hosting provider do you recommend for PlayTube?</a>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#popularTopics">
+                                    <div class="card-body"> We recommend you to use <a href="https://ultahost.com/">UltaHost</a>, UltaHost is powered by us, we added the best configuration possible to run PlayTube fast and smoothly. </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading4">
+                                    <h5 class="mb-0">
+                                       <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Can I use this platform on multiple domains?</a>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#popularTopics">
+                                    <div class="card-body"> With one purchase code you can use it on one domain name. You need to get new license for every new domain name, please check <a href="https://codecanyon.net/licenses/standard" target="_blank">Envato Help Page</a> for more information about licenses. </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading5">
+                                    <h5 class="mb-0">
+                                       <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">I got a problem, How can I get support?</a>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#popularTopics">
+                                    <div class="card-body"> If you need support, or if you're facing any problems, please contact us via <a href="https://doughouzforest.ticksy.com/">Envato Support</a>
+                                       <br> Please note that our respond can take up to 2 business days.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="heading6">
+                                    <h5 class="mb-0">
+                                       <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">What does the support include?</a>
+                                    </h5>
+                                 </div>
+                                 <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#popularTopics">
+                                    <div class="card-body">
+                                       <ul>
+                                          <li>Availability to answer questions, Answering technical questions about item’s features, Assistance with reported bugs and issues, Help with included 3rd party assets.</li>
+                                          <li>Any customization request will be ignored.</li>
+                                          <li>Please make sure to read more about the <a href="https://codecanyon.net/page/item_support_policy">support policy</a>. </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+                  <hr class="divider">
+                  <!-- Support
+                     ============================ -->
+                  <section id="idocs_support">
+                     <h2>Support</h2>
+                     <p>If this documentation doesn't answer your questions, So, Please send us Email via <a class="btn btn-primary" target="_blank" href="https://doughouzforest.ticksy.com/">Item Support Page</a>
+                     </p>
+                     <p> We are located in GMT +5:30 time zone and we answer all questions within 12-24 hours in weekdays. In some rare cases the waiting time can be to 48 hours. (except holiday seasons which might take longer).</p>
+                     <div class="alert alert-warning mb-4">
+                        <span class="badge badge-danger text-uppercase">Note:</span> While we aim to provide the best support possible, please keep in mind that it only extends to verified buyers and only to issues related to our template like bugs and errors. Custom modifications or third party module implementations are not included.
+                     </div>
+                     <h4>Don’t forget to Rate PlayTube! <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                     </h4>
+                     <div class="alert alert-success"> Please Add your Review (Opinion) for Our template. It would be a great support for us. <br> Go to your <strong>CodeCanyon Profile</strong> > <strong>Downloads Tab</strong> > & then You can Rate & Review for our script. <br> Thank You. </div>
+                  </section>
+                  <hr class="divider">
+                  <!-- Changelog
+                     ============================ -->
+
+                  <section id="idocs_changelog">
+                     <h2>Changelog</h2>
+                     <p class="text-4">See what's new added, changed, fixed, improved or updated in the latest versions. </p>
+                     <h3 id="v2-2-2">v2.2.2 <small class="text-muted">(30 June, 2022) [Stability Update]</small>
+  </h3>
+  <ul class="changelog"><li><span class="badge badge-success">Added</span> user roles, admin, moderator, and editor.</li>
+<li><span class="badge badge-success">Added</span> debug system for FFMPEG to admin panel.</li>
+<li><span class="badge badge-success">Added</span> the ability to translate dates.</li>
+<li><span class="badge badge-success">Added</span> the ability to choose player color on embed.</li>
+<li><span class="badge badge-success">Added</span> category list on home page. in default theme.</li>
+<li><span class="badge badge-success">Added</span> developer mode in admin panel.</li>
+<li><span class="badge badge-warning">Updated</span> all PHP libs to latest version & removed unused libs.</li>
+<li><span class="badge badge-info">Improved</span> design of shorts on home page and profile.</li>
+<li><span class="badge badge-info">Improved</span> design of monetization page.</li>
+<li><span class="badge badge-info">Improved</span> design of pro system page on youplay.</li>
+<li><span class="badge badge-info">Improved</span> design of manage sessions and balance pages.</li>
+<li><span class="badge badge-info">Improved</span> design of radio boxes on default theme.</li>
+<li><span class="badge badge-info">Improved</span> design of playlist models.</li>
+<li><span class="badge badge-info">Improved</span> design of history page on youplay.</li>
+<li><span class="badge badge-info">Improved</span> hover effects on some elements.</li>
+<li><span class="badge badge-info">Improved</span> movies page on youplay.</li>
+<li><span class="badge badge-info">Improved</span> stock videos page on youplay.</li>
+<li><span class="badge badge-info">Improved</span> speed on top videos page, it was a bit slow.</li>
+<li><span class="badge badge-danger">Fixed</span> shorts were showing order by last, now by views.</li>
+<li><span class="badge badge-danger">Fixed</span> ajax load was not working on phones.</li>
+<li><span class="badge badge-danger">Fixed</span> users couldn't reply to comments on posts.</li>
+<li><span class="badge badge-danger">Fixed</span> clicking share button on youplay home page wasn't opening the share dialog.</li>
+<li><span class="badge badge-danger">Fixed</span> private videos were added to sitemap.</li>
+<li><span class="badge badge-danger">Fixed</span> google login.</li>
+<li><span class="badge badge-danger">Fixed</span> users weren't able to pay more than $1,000 in wallet.</li>
+<li><span class="badge badge-danger">Fixed</span> wasabi bucket only allowed us-east-1.</li>
+<li><span class="badge badge-danger">Fixed</span> movies search system was broken.</li>
+<li><span class="badge badge-danger">Fixed</span> blank video on liked videos page showing to some users.</li>
+<li><span class="badge badge-danger">Fixed</span> +10 minor bugs.</li></ul>
+<hr class="divider">
+                     <h3 id="v2-2-1">v2.2.1 <small class="text-muted">(30 May, 2022)</small>
+  </h3>
+                      <ul class="changelog">
+                        <li><span class="badge badge-danger">Fixed</span> title showing "playtube" on all pages.</li>
+                      </ul>
+                     <h3 id="v2-2">v2.2 <small class="text-muted">(28 May, 2022)</small>
+  </h3>
+                        <ul class="changelog"><li><span class="badge badge-success">Added</span> the ability to translate terms pages.</li>
+                      <li><span class="badge badge-success">Added</span> the ability to edit every page's SEO.</li>
+                      <li><span class="badge badge-success">Added</span> wasabi storage.</li>
+                      <li><span class="badge badge-success">Added</span> shorts videos, (youtube short videos).</li>
+                      <li><span class="badge badge-success">Added</span> the ability to prevent bad login attempts.</li>
+                      <li><span class="badge badge-success">Added</span> the ability to remember this device.</li>
+                      <li><span class="badge badge-success">Added</span> password complexity system.</li>
+                      <li><span class="badge badge-success">Added</span> registeration by first and last name (auto generated username).</li>
+                      <li><span class="badge badge-success">Added</span> user invitation system.</li>
+                      <li><span class="badge badge-success">Added</span> converted all payments system to one wallet.</li>
+                      <li><span class="badge badge-success">Added</span> added securionpay, Authorize.Net, Yoomoney, Fortumo, Coinbase, Aamarpay, Ngenius and CoinPayments payment methods.</li>
+                      <li><span class="badge badge-success">Added</span> new API.</li>
+                      <li><span class="badge badge-warning">Updated</span> documentation.</li>
+                      <li><span class="badge badge-danger">Fixed</span> few bugs.</li>
+                      <li><span class="badge badge-danger">Fixed</span> small XSS vulnerability.</li></ul><hr class="divider">
+                     <h3 id="v2-1-4">Version 2.1.4 <small class="text-muted">(10 Jan, 2022)</small> <small style="color: #df043e">[Important Security Patch]</small>
+                     </h3>
+                     <ul class="changelog">
+                               <li><span class="badge badge-danger">Fixed</span> maintenance mode page in youplay theme.</li>
+                               <li><span class="badge badge-danger">Fixed</span> upload showing "undefined" using ffmpeg.</li>
+                               <li><span class="badge badge-danger">Fixed</span> system adding users as CC in newsletter.</li>
+                               <li><span class="badge badge-danger">Fixed</span> refund policy title in youplay theme.</li>
+                               <li><span class="badge badge-danger">Fixed</span> HTML code showing in meta description.</li>
+                               <li><span class="badge badge-danger">Fixed</span> important security XSS exploit.</li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v2-1-3">Version 2.1.3 <small class="text-muted">(06 Jan, 2022)</small>
+                     </h3>
+                     <ul class="changelog">
+                               <li><span class="badge badge-success">Added</span> maintenance mode To <strong>Admin -> Settings -> General Configuration</strong>.</li>
+                               <li><span class="badge badge-success">Added</span> LinkedIn, Vkontakte, Instagram, QQ, WeChat, Discord & Mailru social login. </li>
+                               <li><span class="badge badge-success">Added</span> refund policy page to <strong>Admin Panel -> Pages -> Manage Pages</strong>.</li>
+                               <li><span class="badge badge-success">Added</span> HTML editor to <strong>Admin Panel -> Pages -> Manage Pages</strong>.</li>
+                               <li><span class="badge badge-success">Added</span> faqs page to <strong>Admin Panel -> Pages -> Manage FAQs</strong>.</li>
+                               <li><span class="badge badge-danger">Fixed</span> subscription count on youplay theme.</li>
+                               <li><span class="badge badge-danger">Fixed</span> upload max size in admin panel.</li>
+                               <li><span class="badge badge-danger">Fixed</span> english mistakes in Admin Panel.</li>
+                               <li><span class="badge badge-info">Updated</span> documentation, <a href="https://docs.playtubescript.com/" target="_blank">https://docs.playtubescript.com/</a> </li>
+                               <li><span class="badge badge-info">Updated</span> blog design on both themes.</li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v2-1-2">Version 2.1.2 <small class="text-muted">(29 Dec, 2021)</small>
+                     </h3>
+                     <ul class="changelog">
+                               <li><span class="badge badge-success">Added</span> the ability to set video resolutions in Admin -> FFMPEG.</li>
+                               <li><span class="badge badge-success">Added</span> noindex meta tag for private videos.</li>
+                               <li><span class="badge badge-danger">Fixed</span> auto-play problems in watch page. </li>
+                               <li><span class="badge badge-danger">Fixed</span> subscribers page in youplay theme. </li>
+                               <li><span class="badge badge-danger">Fixed</span> playlist auto play issue.</li>
+                               <li><span class="badge badge-danger">Fixed</span> emojie support on video titles. </li>
+                               <li><span class="badge badge-danger">Fixed</span> categories selection on mobile devices. (youplay)</li>
+                               <li><span class="badge badge-danger">Fixed</span> video views was not increasing in embeded videos. </li>
+                               <li><span class="badge badge-danger">Fixed</span> amazon, ftp and DO testing buttons in admin panel.</li>
+                               <li><span class="badge badge-danger">Fixed</span> bank receipt approval in admin panel. </li>
+                               <li><span class="badge badge-danger">Fixed</span> progress bar on upload page (non ffmpeg) </li>
+                               <li><span class="badge badge-danger">Fixed</span> thumbnail select issue on upload page (youplay)</li>
+                               <li><span class="badge badge-danger">Fixed</span> PayPal payment method.</li>
+                               <li><span class="badge badge-danger">Fixed</span> RTL on youplay theme.</li>
+                               <li><span class="badge badge-danger">Fixed</span> few more minor bugs. </li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v2-1">Version 2.1 <small class="text-muted">(16 Aug, 2021)</small>
+                     </h3>
+                     <ul class="changelog">
+                               <li><span class="badge badge-success">Added</span> new theme, updated youplay theme.</li>
+                               <li><span class="badge badge-warning">Re-orginzed</span> admin panel links, content, texts and created auto save system.</li>
+                               <li><span class="badge badge-success">Added</span> new video player, plyr.io </li>
+                               <li><span class="badge badge-danger">Fixed</span> 10+ reported bugs. </li>
+                               <li><span class="badge badge-danger">Fixed</span> Important security bug. </li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v2-0-3">Version 2.0.3 <small class="text-muted">(18 April, 2021)</small>
+                     </h3>
+                     <ul class="changelog">
+                               <li><span class="badge badge-danger">Fixed</span> video privacy issue. </li>
+                               <li><span class="badge badge-danger">Fixed</span> video image ads count down issue. </li>
+                               <li><span class="badge badge-danger">Fixed</span> video cards issue on self hosted videos. </li>
+                               <li><span class="badge badge-danger">Fixed</span> SQL injection vulnerability. </li>
+                               <li><span class="badge badge-danger">Fixed</span> other minor bugs. </li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v2-0-2">Version 2.0.2 <small class="text-muted">(28 March, 2021)</small>
+                     </h3>
+                     <ul class="changelog">
+                               <li><span class="badge badge-success">Added</span> support for PHP 8.0+ and MySQL 8.0+ </li>
+                               <li><span class="badge badge-info">Updated</span> S3 / Spaces libraries.</li>
+                            </ul>
+
+                     <hr class="divider">
+                     <h3 id="v2-0">Version 2.0 <small class="text-muted">(20 Feb, 2021)</small>
+                     </h3>
+                     <ul class="changelog">
+                               <li><span class="badge badge-success">Added</span> the ability to turn off chat on live steam. </li>
+                               <li><span class="badge badge-success">Added</span> new admin panel, v2 with many new features.</li>
+                               <li><span class="badge badge-success">Added</span> ability to add trailer with movie [enable/disable]. </li>
+                               <li><span class="badge badge-success">Added</span> ability to restrict a video from embeding while uploading [enable/disable].</li>
+                               <li><span class="badge badge-success">Added</span> pro users can have Google anaylytics on their channel [enable/disable].</li>
+                               <li><span class="badge badge-success">Added</span> ability to add texts/cards in specific part of the video. </li>
+                               <li><span class="badge badge-success">Added</span> see online users [admin panel] </li>
+                               <li><span class="badge badge-success">Added</span> notification for the admin when someone request withdrawal in admin panel, also notification for reports, verification requests and bank receipts.</li>
+                               <li><span class="badge badge-success">Added</span> new turkish payment gateway</li>
+                               <li><span class="badge badge-success">Added</span> scheduled upload videos in Privacy: Public, Private, Unlisted, Scheduled.</li>
+                               <li><span class="badge badge-success">Added</span> subscribe to newsletters. </li>
+                               <li><span class="badge badge-success">Added</span> the ability to download your own data from settings page. </li>
+                               <li><span class="badge badge-danger">Fixed</span> Important security bug. </li>
+                               <li><span class="badge badge-danger">Fixed</span> 5+ important bugs. </li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v1-9">Version 1.9 <small class="text-muted">(10 Sep, 2020)</small>
+                     </h3>
+                     <ul class="changelog">
+                               <li><span class="badge badge-success">Added</span> the ability to restrict rights of certain user from uploading / importing a video. </li>
+                               <li><span class="badge badge-success">Added</span> cronjob to remove videos from site that are already removed from YouTube. (/deleted_youtube.php)</li>
+                               <li><span class="badge badge-success">Added</span> new video player (cloudinary).</li>
+                               <li><span class="badge badge-success">Added</span> agora live stream system. </li>
+                               <li><span class="badge badge-success">Added</span> only paid users could stream, free or only admin could.</li>
+                               <li><span class="badge badge-success">Added</span> Paystack, Iyzipay, Paysera, Razorpay and cashfree payment methods.</li>
+                               <li><span class="badge badge-success">Added</span> stock video section (Add royality free, video with license & require membership to download)</li>
+                               <li><span class="badge badge-success">Added</span> IMA vast ads support for Google video ads (new player is only supported) </li>
+                               <li><span class="badge badge-success">Added</span> ability to choose custom categories to appear on homepage. </li>
+                               <li><span class="badge badge-success">Added</span> ability to pay per view feature for publisher. </li>
+                               <li><span class="badge badge-success">Added</span> ability to re-arrange videos in playlist. </li>
+                               <li><span class="badge badge-success">Added</span> ability to set articles as featured on homepage. </li>
+                               <li><span class="badge badge-success">Added</span> point system, users can earn points by doing several activities in the site. </li>
+                               <li><span class="badge badge-success">Added</span> sticky video player (on scroll).</li>
+                               <li><span class="badge badge-danger">Fixed</span> Important security bug. </li>
+                               <li><span class="badge badge-danger">Fixed</span> 5+ important bugs. </li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v1-8-1">Version 1.8.1 <small class="text-muted">(06 April, 2020)</small>
+                     </h3>
+                     <ul class="changelog">
+                               <li><span class="badge badge-danger">Fixed</span> Important security bug. </li>
+                               <li><span class="badge badge-danger">Fixed</span> 5+ important bugs. </li>
+                            </ul>
+
+                     <hr class="divider">
+                     <h3 id="v1-7-1">Version 1.7.1 <small class="text-muted">(05 Sep, 2019)</small>
+                     </h3>
+                     <ul class="changelog">
+                               <li><span class="badge badge-success">Added</span> ability to add fake views, likes, in the admin panel for specific videos. </li>
+                               <li><span class="badge badge-success">Added</span> ability to enable/disable monetization for specific videos. [enable/disable]</li>
+                               <li><span class="badge badge-success">Added</span> ability to apply for disable enable from admin monetization (form) [enable/disable]</li>
+                               <li><span class="badge badge-success">Added</span> the ability to send take down notice for specific video. [enable/disable] </li>
+                               <li><span class="badge badge-success">Added</span> when someone access site first time a popup was added to select specific language. </li>
+                               <li><span class="badge badge-success">Added</span> 5+ more APIs. </li>
+                               <li><span class="badge badge-danger">Fixed</span> 20+ important bugs. </li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v1-7">Version 1.7 <small class="text-muted">(12 Jul, 2019)</small>
+                     </h3>
+                     <ul class="changelog">
+                               <li><span class="badge badge-success">Added</span> the ability to set a limit per day for ads. </li>
+                               <li><span class="badge badge-success">Added</span> the ability to block email provider in registeration.</li>
+                               <li><span class="badge badge-success">Added</span> +18 pop up, [enable/disable]</li>
+                               <li><span class="badge badge-success">Added</span> the ability to import videos from ok.ru (user end). </li>
+                               <li><span class="badge badge-success">Added</span> sort by month, week and year in top videos page. </li>
+                               <li><span class="badge badge-success">Added</span> gif system for videos, (a 4 second gif will show up when user hover on the video thumbnail).</li>
+                               <li><span class="badge badge-success">Added</span> block system, channels can block each other. </li>
+                               <li><span class="badge badge-success">Added</span> the ability to import videos to a sub category.</li>
+                               <li><span class="badge badge-success">Added</span> Digitalocean space support, you can upload videos to Digitalocean.</li>
+                               <li><span class="badge badge-success">Added</span> custom pages, admin can create custom pages. </li>
+                               <li><span class="badge badge-success">Added</span> Manage currencies from admin panel, you can add, edit, and delete any curreny.</li>
+                               <li><span class="badge badge-success">Added</span> Manage sessions, user can manage his sessions from settings.</li>
+                               <li><span class="badge badge-success">Added</span> 2Checkout payment method.</li>
+                               <li><span class="badge badge-success">Added</span> Stripe, and local bank payment method support. </li>
+                               <li><span class="badge badge-success">Added</span> subscription system for channels. User can subscribe to user channel, to view their selling videos. </li>
+                               <li><span class="badge badge-danger">Fixed</span> 20+ important bugs. </li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v1-6">Version 1.6 <small class="text-muted">(30 Mar, 2019)</small>
+                     </h3>
+                     <ul class="changelog">
+                       <li><span class="badge badge-success">Added</span> Movies system, now admin can add movies, manage movies categories, sell movies to users.</li>
+                       <li><span class="badge badge-success">Added</span> pagination system, now all videos load thru pagination system and not thru "load more videos" button. </li>
+                       <li><span class="badge badge-success">Added</span> the ability to upload a demo video for videos that being sold.</li>
+                       <li><span class="badge badge-success">Added</span> dailymotion monetization system. </li>
+                       <li><span class="badge badge-success">Added</span> the ability for users to create and submit articles to admin. </li>
+                       <li><span class="badge badge-success">Added</span> now ads are being shown on articles page too.</li>
+                       <li><span class="badge badge-success">Added</span> the ability for user to transfter funds from earnings to wallet, so they can buy ads from their own earnings.</li>
+                       <li><span class="badge badge-success">Added</span> slider to home page. </li>
+                       <li><span class="badge badge-danger">Fixed</span> few important bugs on both themes. </li>
+                       <li><span class="badge badge-warning">Improved</span> site header in default theme.</li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v1-5">Version 1.5 <small class="text-muted">(13 Jan, 2019)</small>
+                     </h3>
+                     <ul class="changelog">
+                                <li><span class="badge badge-success">Added</span> video studio, view detailed charts and analytics of videos, views, likes, dislikes, comments and many other features. </li>
+                                <li><span class="badge badge-success">Added</span> paid videos system, user can sell his own videos to other viewers + admin commission</li>
+                                <li><span class="badge badge-success">Added</span> auto import videos using assigned users, admin can assign a user, and the videos will be imported to the user's account.</li>
+                                <li><span class="badge badge-success">Added</span> Upload disk limit for all users, pro users, and for specific users.</li>
+                                <li><span class="badge badge-success">Added</span> video seconds on comments, start a video from a spesfic seconds.</li>
+                                <li><span class="badge badge-success">Added</span> Subscription list to the left sidebar on youplay theme</li>
+                                <li><span class="badge badge-success">Added</span> Ajax load, content are loaded faster and smoother. </li>
+                                <li><span class="badge badge-success">Added</span> filter system on search page. </li>
+                                <li><span class="badge badge-success">Added</span> Two-factor authentication. </li>
+                                <li><span class="badge badge-success">Added</span> Identify the speed of the internet and select the quality based on that.</li>
+                                <li><span class="badge badge-success">Added</span> HTML editor for announcements</li>
+                                <li><span class="badge badge-success">Added</span> Popular Channels To browse most Precent popular channels.</li>
+                                <li><span class="badge badge-success">Added</span> The ability to change video author</li>
+                                <li><span class="badge badge-success">Added</span> 2 new players, videojs & fluid video player with preload support.</li>
+                                <li><span class="badge badge-success">Added</span> max ffmpeg process in same time, you can set how many ffmpeg process can run in same time.</li>
+                                <li><span class="badge badge-success">Added</span> the ability for admin to view ads from admin panel > ads.</li>
+                                <li><span class="badge badge-success">Added</span> the ability to import videos from twitch.tv for admin and for users.</li>
+                                <li><span class="badge badge-success">Added</span> GEO blocking, user can restrict a video from being viewed from blocked locations.</li>
+                                <li><span class="badge badge-success">Added</span> the ability to view ads from videos that are embeded on other sites.</li>
+                                <li><span class="badge badge-success">Added</span> onesingal API, to send push notifications to the mobile apps.</li>
+                                <li><span class="badge badge-success">Added</span> sub categories.</li>
+                                <li><span class="badge badge-success">Added</span> The ability to manage categories from admin panel.</li>
+                                <li><span class="badge badge-danger">Fixed</span> few important bugs. </li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v1-4-5">Version 1.4.5 <small class="text-muted">(06 Aug, 2018)</small>
+                     </h3>
+                     <ul  class="changelog">
+                                <li><span class="badge badge-success">Added</span> Wasabi storage support. </li>
+                                <li><span class="badge badge-success">Added</span> New theme. </li>
+                                <li><span class="badge badge-success">Added</span> private, public and unlisted videos. </li>
+                                <li><span class="badge badge-success">Added</span> Custom thumbnails when FFMPEG is enabled. </li>
+                                <li><span class="badge badge-success">Added</span> Download button for all qualities [enable/disable] </li>
+                                <li><span class="badge badge-success">Added</span> Import Facebook videos. {Requires APP ID AND SECRET KEY} </li>
+                                <li><span class="badge badge-success">Added</span> URL Shortener when sharing a video link. </li>
+                                <li><span class="badge badge-success">Added</span> Online Memebers In Admin > Manage users. </li>
+                                <li><span class="badge badge-success">Added</span> Instagram username to profile. </li>
+                                <li><span class="badge badge-success">Added</span> Age restriction, [ All | +18 Only ] </li>
+                                <li><span class="badge badge-success">Added</span> Donation system (Anyone can donate to channels) [enable/disable]</li>
+                                <li><span class="badge badge-success">Added</span> Video timestamp on home page / featured videos. </li>
+                                <li><span class="badge badge-success">Added</span> Admin can now approve or disapprove videos before publishing. </li>
+                                <li><span class="badge badge-success">Added</span> Admin can limit the upload videos of each user.</li>
+                                <li><span class="badge badge-success">Added</span> RTL support.</li>
+                                <li><span class="badge badge-success">Added</span> notifications when getting a new message in ajax mode.</li>
+                                <li><span class="badge badge-warning">Improved</span> speed. </li>
+                                <li><span class="badge badge-danger">Fixed</span> few bugs. </li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v1-4-3">Version 1.4.3 <small class="text-muted">(13 Jun, 2018)</small>
+                     </h3>
+                     <ul class="changelog">
+                       <li><span class="badge badge-success">Added</span> FTP support, now you can upload videos to diffrent servers. </li>
+                       <li><span class="badge badge-success">Added</span> watermark on video player. </li>
+                       <li><span class="badge badge-success">Added</span> 1080p, 2K, and 4K support to FFMPEG. </li>
+                       <li><span class="badge badge-success">Added</span> GDPR support, cookie frame, checkboxes and privacy policy update.</li>
+                       <li><span class="badge badge-success">Added</span> API for delete account, create playlist, and add to playlist. </li>
+                       <li><span class="badge badge-danger">Fixed</span> 10+ reported bugs</li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v1-4">Version 1.4 <small class="text-muted">(13 Apr, 2018)</small>
+                     </h3>
+                     <ul class="changelog">
+                       <li><span class="badge badge-success">Added</span> New theme.</li>
+                         <li><span class="badge badge-success">Added</span> duration & channels in search page.</li>
+                         <li><span class="badge badge-warning">Removed</span> Ads on YouTube videos.</li>
+                         <li><span class="badge badge-danger">Fixed</span> few bugs. </li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v1-3">Version 1.3 <small class="text-muted">(04 Jan, 2018)</small>
+                     </h3>
+                     <ul class="changelog">
+                       <li><span class="badge badge-success">Added</span> notifications system (likes, dislikes, comments, new subscriber).</li>
+                        <li><span class="badge badge-success">Added</span> report video system.</li>
+                        <li><span class="badge badge-success">Added</span> load more button to sidebar.</li>
+                        <li><span class="badge badge-success">Added</span> the ability for video owner to delete comments on his video.</li>
+                        <li><span class="badge badge-success">Added</span> pin comments system.</li>
+                        <li><span class="badge badge-success">Added</span> FFMPEG system, for video conversation, and auto thumbnail detection.</li>
+                        <li><span class="badge badge-success">Added</span> comment "by top" storing.</li>
+                        <li><span class="badge badge-success">Added</span> IP field on users table.</li>
+                        <li><span class="badge badge-success">Added</span> drag & drop for video upload.</li>
+                        <li><span class="badge badge-success">Added</span> night mode.</li>
+                        <li><span class="badge badge-success">Added</span> languages to admin panel.</li>
+                        <li><span class="badge badge-success">Added</span> contact us form.</li>
+                        <li><span class="badge badge-danger">Fixed</span> few bugs</li>
+                            </ul>
+                     <hr class="divider">
+
+                     <h3 id="v1-2-1">Version 1.2.1 <small class="text-muted">(01 Dec, 2017)</small>
+                     </h3>
+                     <ul class="changelog">
+                       <li><span class="badge badge-success">Added</span> full API system for the upcoming native android app.</li>
+                       <li><span class="badge badge-success">Added</span> verification system.</li>
+                       <li><span class="badge badge-success">Added</span> announcement system.</li>
+                       <li><span class="badge badge-success">Added</span> ban user by IP to admin panel.</li>
+                       <li><span class="badge badge-success">Added</span> custom JavaScript/CSS to admin panel.</li>
+                       <li><span class="badge badge-success">Added</span> mp4 links support in import video tab</li>
+                       <li><span class="badge badge-success">Added</span> share to wowonder button to watch page.</li>
+                       <li><span class="badge badge-danger">Fixed</span> few important bugs</li>
+                            </ul>
+                     <hr class="divider">
+                     <h3 id="v1-0">Version 1.0 <small class="text-muted">(2017)</small>
+                     </h3>
+                     <p>Initial release.</p>
+                  </section>
+                  <hr class="divider">
+                  <section id="License">
+                     <h2>License</h2>
+                     <p>PlayTube is made by <a href="https://codecanyon.net/user/doughouzforest/portfolio" target="_blank">DoughouzForest</a> under <a href="https://themeforest.net/licenses/standard" target="_blank">Envato Extended & Regular License</a>. </p>
+                     <h5>What is the different between Extended and Regular license? </h5>
+                     <ul>
+                        <li>An Extended License is required if the end user must pay to use the end product, means that you should own an extended license if you will charge your end users. </li>
+                        <li>Both versions are similar, same features, updates and support services. </li>
+                        <li>Both can be used one domain only, means you need a license for every domain.</li>
+                     </ul>
+                  </section>
+                  <hr class="divider">
+                  <section id="idocs_templates">
+        <h2>More PHP Scripts</h2>
+        <p class="lead">Checkout Our Below Premium PHP Scripts Made by <strong>DoughouzForest</strong>  </p>
+
+   <div class="row">
+   <div class="col-4 my-3 text-center">
+   <a target="_blank" href="https://1.envato.market/zLXZ7"><img class="img-fluid border" src="assets/images/templates/wowonder.jpg" alt="">
+   <h6 class="pt-2">WoWonder - The Ultimate PHP Social Network Platform</h6>
+   </a>
+   </div>
+   <div class="col-4 my-3 text-center">
+   <a target="_blank" href="https://1.envato.market/YgL3Jq"><img class="img-fluid border" src="assets/images/templates/deepsound.jpg" alt="">
+   <h6 class="pt-2">DeepSound - The Ultimate PHP Music Sharing Platform</h6>
+   </a>
+   </div>
+   <div class="col-4 my-3 text-center">
+   <a target="_blank" href="https://1.envato.market/MXg91N"><img class="img-fluid border" src="assets/images/templates/quickdate.jpg" alt="">
+   <h6 class="pt-2">QuickDate - The Ultimate PHP Dating Platform</h6>
+   </a>
+   </div>
+
+   <div class="col-4 my-3 text-center">
+   <a target="_blank" href="https://1.envato.market/KegDAz"><img class="img-fluid border" src="assets/images/templates/pixelphoto.jpg" alt="">
+   <h6 class="pt-2">PixelPhoto - The Ultimate Image Sharing & Photo Social Network Platform</h6>
+   </a>
+   </div>
+   <div class="col-4 my-3 text-center">
+   <a target="_blank" href="https://1.envato.market/jWVvga"><img class="img-fluid border" src="assets/images/templates/flame.png" alt="">
+   <h6 class="pt-2">Flame - News, Viral Lists, Quizzes, Videos, Polls and Music</h6>
+   </a>
+   </div>
+   <div class="col-4 my-3 text-center">
+   <a target="_blank" href="https://1.envato.market/5bKV3D"><img class="img-fluid border" src="assets/images/templates/askme.jpg" alt="">
+   <h6 class="pt-2">AskMe - The Ultimate PHP Questions & Answers Social Network Platform</h6>
+   </a>
+   </div>
+   </div>
+
+   <p class="text-center"><a class="btn btn-lg btn-primary my-4" target="_blank" href="https://1.envato.market/a1P0kQ">Our Portfolio</a></p>
+
+      </section>
+
+					<hr class="divider">
+					<section id="themes">
+						<h2>More Themes</h2>
+						<p class="lead">Checkout Below Theme Made by <strong><a href="https://codecanyon.net/user/themelated">Themelated</a></strong>  </p>
+
+						<div class="row">
+							<div class="col-4 my-3 text-center">
+								<a target="_blank" href="http://bit.ly/VPlayTheme"><img class="img-fluid border" src="assets/images/templates/vidplay.jpg" alt="">
+									<h6 class="pt-2">VidPlay - The Ultimate PlayTube Theme</h6>
+								</a>
+							</div>
+						</div>
+					</section>
+
+
+               </div>
+            </div>
+         </div>
+         <!-- Content end -->
+         <!-- Footer
+            ============================ -->
+         <footer id="footer" class="section bg-dark footer-text-light">
+            <div class="container">
+               <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3"></ul>
+               <p class="text-center">Copyright &copy; 2022 <a href="https://1.envato.market/AoPrn7">PlayTube</a>. All Rights Reserved. </p>
+            </div>
+         </footer>
+         <!-- Footer end -->
+      </div>
+      <!-- Document Wrapper end -->
+      <!-- Back To Top -->
+      <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)">
+      <i class="fa fa-chevron-up"></i>
+      </a>
+      <!-- JavaScript
+         ============================ -->
+      <script src="assets/vendor/jquery/jquery.min.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Highlight JS -->
+      <script src="assets/vendor/highlight.js/highlight.min.js"></script>
+      <!-- Easing -->
+      <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+      <!-- Magnific Popup -->
+      <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+      <!-- Custom Script -->
+      <script src="assets/js/theme.js"></script>
+   </body>
+</html>
